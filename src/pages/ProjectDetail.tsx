@@ -1,10 +1,19 @@
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft, Users, Calendar, MapPin, Target, CheckCircle } from 'lucide-react';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [projectId]);
+
+  // Check if user came from homepage
+  const isFromHome = location.state?.from === 'home';
 
   const projectsData = {
     "kishori-vikas": {
@@ -262,12 +271,12 @@ const ProjectDetail = () => {
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Project Not Found</h1>
-          <button 
-            onClick={() => navigate('/projects')}
-            className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors"
-          >
-            Back to Projects
-          </button>
+                      <button 
+              onClick={() => navigate(isFromHome ? '/' : '/projects')}
+              className="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors"
+            >
+              {isFromHome ? 'Back to Home' : 'Back to Projects'}
+            </button>
         </div>
       </div>
     );
@@ -279,11 +288,11 @@ const ProjectDetail = () => {
       <section className="bg-gradient-to-br from-orange-50 via-white to-orange-50 py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <button 
-            onClick={() => navigate('/projects')}
+            onClick={() => navigate(isFromHome ? '/' : '/projects')}
             className="flex items-center space-x-2 text-orange-600 hover:text-orange-700 mb-8 transition-colors"
           >
             <ArrowLeft className="h-5 w-5" />
-            <span>Back to Projects</span>
+            <span>{isFromHome ? 'Back to Home' : 'Back to Projects'}</span>
           </button>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -450,10 +459,10 @@ const ProjectDetail = () => {
               Support Our Work
             </button>
             <button 
-              onClick={() => navigate('/projects')}
+              onClick={() => navigate(isFromHome ? '/' : '/projects')}
               className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold hover:bg-white hover:text-orange-600 transition-all duration-300"
             >
-              View All Projects
+              {isFromHome ? 'Back to Home' : 'View All Projects'}
             </button>
           </div>
         </div>
