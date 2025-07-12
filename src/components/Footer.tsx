@@ -22,8 +22,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
-              Empowering rural and tribal communities in Maharashtra through education, 
-              digital literacy, women empowerment, and sustainable development initiatives.
+              Established in 1997, empowering rural and tribal communities in Maharashtra through education, 
+              digital literacy, women empowerment, and environmental conservation initiatives.
             </p>
             <div className="flex space-x-4">
               <div className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer">
@@ -69,7 +69,7 @@ const Footer = () => {
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-600">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-orange-500 flex-shrink-0 mt-1" />
-                <span>Tipeshwar Wildlife Sanctuary Area, Maharashtra, India</span>
+                <span>Pandharkawada, Dist. Yavatmal, Maharashtra, India - 444702</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-500 flex-shrink-0" />
@@ -77,7 +77,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-orange-500 flex-shrink-0" />
-                <span>info@janhitsanstha.org</span>
+                <span>janhitsanstha@gmail.com</span>
               </div>
             </div>
             

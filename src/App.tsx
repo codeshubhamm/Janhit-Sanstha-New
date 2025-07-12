@@ -8,6 +8,7 @@ import Projects from './pages/Projects';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Donate from './pages/Donate';
+import ProjectDetail from './pages/ProjectDetail';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/projects/:projectId" element={<ProjectDetail />} />
         </Routes>
         <Footer />
       </div>

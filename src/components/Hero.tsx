@@ -17,9 +17,9 @@ const Hero = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">Education</span> & Development
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-lg">
-                Janhit Bahuuddeshiya Gramin Vikas Sanstha works tirelessly in tribal villages 
-                around Tipeshwar Wildlife Sanctuary, focusing on education, digital literacy, 
-                women empowerment, and sustainable development.
+                Founded in 1997, Janhit Bahuuddeshiya Gramin Vikas Sanstha has been actively working 
+                in 20 tribal villages surrounding the Tipeshwar Wildlife Sanctuary, focusing on 
+                adolescent development, digital education, women empowerment, and environmental conservation.
               </p>
             </div>
             
@@ -30,35 +30,23 @@ const Hero = () => {
               >
                 Donate Now
               </button>
-              <button className="border-2 border-orange-500 text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold hover:bg-orange-50 transition-all duration-300">
+              <button 
+                onClick={() => navigate('/about')}
+                className="border-2 border-orange-500 text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-semibold hover:bg-orange-50 transition-all duration-300"
+              >
                 Learn More
               </button>
             </div>
-            
-            <div className="grid grid-cols-3 gap-3 sm:gap-6 pt-6 lg:pt-8">
-              <div className="text-center transform hover:scale-110 transition-transform duration-300">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-600">16</div>
-                <div className="text-xs sm:text-sm text-gray-600">Villages Served</div>
-              </div>
-              <div className="text-center transform hover:scale-110 transition-transform duration-300">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-600">1000+</div>
-                <div className="text-xs sm:text-sm text-gray-600">Lives Impacted</div>
-              </div>
-              <div className="text-center transform hover:scale-110 transition-transform duration-300">
-                <div className="text-xl sm:text-2xl lg:text-3xl font-bold text-orange-600">5</div>
-                <div className="text-xs sm:text-sm text-gray-600">Active Projects</div>
-              </div>
-            </div>
           </div>
           
-          <div className="relative transform hover:-translate-y-3 transition-transform duration-500 order-1 lg:order-2">
+          <div className="relative transform hover:-translate-y-3 transition-transform duration-500 order-1 lg:order-2 -mt-2 sm:-mt-4 lg:-mt-6">
             <img 
               src="/1.Main Image.jpg" 
               alt="Children in rural education program" 
-              className="relative rounded-3xl shadow-2xl w-full h-80 sm:h-[450px] lg:h-[600px] object-cover object-center transition-transform duration-500 -mt-4 sm:-mt-6 lg:-mt-8"
+              className="relative rounded-3xl shadow-2xl w-full h-auto max-h-[1400px] lg:max-h-[1600px] xl:max-h-[1800px] object-contain transition-transform duration-500"
             />
             <div className="absolute -bottom-3 sm:-bottom-6 -left-3 sm:-left-6 bg-white p-3 sm:p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
-              <div className="text-lg sm:text-2xl font-bold text-orange-600">450+</div>
+              <div className="text-lg sm:text-2xl font-bold text-orange-600">250+</div>
               <div className="text-xs sm:text-sm text-gray-600">Students in Education Program</div>
             </div>
           </div>

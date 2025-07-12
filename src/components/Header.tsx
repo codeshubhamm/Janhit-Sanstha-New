@@ -83,7 +83,6 @@ const Header = () => {
           
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Search className="h-5 w-5 text-gray-500 cursor-pointer hover:text-orange-500 transition-colors" />
             <Globe className="h-5 w-5 text-gray-500 cursor-pointer hover:text-orange-500 transition-colors" />
             <button 
               onClick={() => navigate('/donate')}
@@ -95,7 +94,6 @@ const Header = () => {
 
           {/* Mobile Actions */}
           <div className="flex lg:hidden items-center space-x-2 sm:space-x-4">
-            <Search className="h-5 w-5 text-gray-500 cursor-pointer hover:text-orange-500 transition-colors" />
             <button 
               onClick={() => navigate('/donate')}
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl text-sm sm:text-base font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"

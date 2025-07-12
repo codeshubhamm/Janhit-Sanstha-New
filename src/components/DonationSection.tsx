@@ -8,7 +8,7 @@ const DonationSection = () => {
           <div className="lg:col-span-2 grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/8101808/pexels-photo-8101808.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                src="/Jadui Gulak Img.jpg" 
                 alt="Children learning" 
                 className="w-full h-48 object-cover"
               />
@@ -20,7 +20,7 @@ const DonationSection = () => {
             
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                src="/Pankh Img 1.jpg" 
                 alt="Food distribution" 
                 className="w-full h-48 object-cover"
               />

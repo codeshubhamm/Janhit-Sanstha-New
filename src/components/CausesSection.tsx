@@ -3,21 +3,21 @@ import React from 'react';
 const CausesSection = () => {
   const causes = [
     {
-      image: "https://images.pexels.com/photos/8613264/pexels-photo-8613264.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/Kishor Vikas Img.jpg",
       title: "Providing school desk to a school with 50 students",
       raised: "$2,500",
       goal: "$5,000",
       percentage: 50
     },
     {
-      image: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/Pankh Img 1.jpg",
       title: "Supporting Healthy School Food Programs",
       raised: "$3,200",
       goal: "$4,000",
       percentage: 80
     },
     {
-      image: "https://images.pexels.com/photos/8101808/pexels-photo-8101808.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/Jadui Gulak Img.jpg",
       title: "Fighting Hunger with Food Security Programs",
       raised: "$1,800",
       goal: "$3,000",

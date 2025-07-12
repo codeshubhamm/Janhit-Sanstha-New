@@ -15,8 +15,8 @@ const AboutSection = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">Rural Development</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
-              Janhit Bahuuddeshiya Gramin Vikas Sanstha is a non-profit organization working 
-              actively in 16 tribal villages surrounding the Tipeshwar Wildlife Sanctuary in Maharashtra, India.
+              Founded in 1997, Janhit Bahuuddeshiya Gramin Vikas Sanstha is a registered non-profit organization 
+              working actively in 20 tribal villages surrounding the Tipeshwar Wildlife Sanctuary in Yavatmal, Maharashtra.
             </p>
             
             <div className="space-y-4 lg:space-y-6">
@@ -27,9 +27,9 @@ const AboutSection = () => {
                 <div>
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Our Mission</h3>
                   <p className="text-sm sm:text-base text-gray-600">
-                    To uplift rural and tribal communities through holistic development initiatives 
-                    focused on education, digital empowerment, women development, financial literacy, 
-                    sustainable agriculture, and environmental conservation.
+                    To implement educational initiatives, skill development, environmental awareness programs, 
+                    and cooperative systems in remote and tribal areas to promote self-reliant livelihood 
+                    and community empowerment.
                   </p>
                 </div>
               </div>
@@ -41,8 +41,8 @@ const AboutSection = () => {
                 <div>
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">Our Vision</h3>
                   <p className="text-sm sm:text-base text-gray-600">
-                    We envision a world where every individual—regardless of their background—has 
-                    access to basic necessities, education, and opportunities for personal and community growth.
+                    To create an ideal society by providing education, skill development, environmental awareness, 
+                    cooperation, and self-reliant livelihood opportunities to rural and tribal citizens.
                   </p>
                 </div>
               </div>
@@ -51,8 +51,8 @@ const AboutSection = () => {
           
           <div className="relative order-1 lg:order-2">
             <img 
-              src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600" 
-              alt="Rural development work" 
+              src="/ABOUT JANHIT IMAGE .jpg" 
+              alt="About Janhit organization" 
               className="relative rounded-3xl shadow-2xl w-full h-64 sm:h-80 lg:h-96 object-cover"
             />
           </div>

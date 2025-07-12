@@ -8,7 +8,7 @@ const TrustedOrg = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600" 
+              src="/Digital Saksharta Img.jpg" 
               alt="Volunteer helping" 
               className="rounded-xl shadow-lg w-full h-96 object-cover"
             />

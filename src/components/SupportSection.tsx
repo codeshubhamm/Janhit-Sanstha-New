@@ -20,7 +20,7 @@ const SupportSection = () => {
           
           <div className="relative">
             <img 
-              src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600" 
+              src="/Digital Saksharta Img.jpg" 
               alt="Support urgent needs" 
               className="rounded-xl shadow-2xl w-full h-80 object-cover"
             />

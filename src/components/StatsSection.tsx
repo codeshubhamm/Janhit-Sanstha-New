@@ -4,25 +4,25 @@ import { TrendingUp, Users, BookOpen, Heart, Award, Target } from 'lucide-react'
 const StatsSection = () => {
   const stats = [
     {
-      number: "450+",
+      number: "250+",
       label: "Students Educated",
-      description: "Through Pankh Sapno Ki Udaan program",
+      description: "Through Kishori Vikas Project",
       icon: BookOpen,
       color: "text-blue-600",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200"
     },
     {
-      number: "350",
-      label: "Girls Empowered",
-      description: "Adolescent girls in Kishori Vikas Project",
+      number: "450",
+      label: "Students in Education",
+      description: "Through Pankh Sapno Ki Udaan program",
       icon: Heart,
       color: "text-pink-600",
       bgColor: "bg-pink-50",
       borderColor: "border-pink-200"
     },
     {
-      number: "230",
+      number: "150+",
       label: "Digital Learners",
       description: "Villagers trained in Digital Saksharta",
       icon: TrendingUp,
@@ -31,9 +31,9 @@ const StatsSection = () => {
       borderColor: "border-green-200"
     },
     {
-      number: "100",
+      number: "385",
       label: "Financial Literacy",
-      description: "Children in Jadui Gullak program",
+      description: "Target for Jadui Gullak program",
       icon: Users,
       color: "text-orange-600",
       bgColor: "bg-orange-50",
@@ -53,8 +53,8 @@ const StatsSection = () => {
             Transforming Lives Across <span className="text-orange-600">Maharashtra</span>
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-            Every number represents a life touched, a dream realized, and a community strengthened. 
-            Our data-driven approach ensures measurable impact in tribal villages.
+            For more than two decades, Janhit has consistently delivered impactful programs, 
+            creating sustainable change through grassroots action in tribal and rural communities.
           </p>
         </div>
         

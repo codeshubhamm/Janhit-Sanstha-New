@@ -1,51 +1,80 @@
 import React from 'react';
 
+import { useNavigate } from 'react-router-dom';
+
 const ProjectsPreview = () => {
+  const navigate = useNavigate();
+
   const projects = [
     {
+      id: "kishori-vikas",
       title: "Kishori Vikas Project",
-      description: "This initiative empowers 350 adolescent girls through structured programs focused on education and life skills, workshops on health, hygiene, and self-defense, leadership development and decision-making skills, and career guidance and mentorship.",
-      detailedDescription: "The project's primary aim is to build confidence, independence, and informed life choices among adolescent girls in rural communities. It creates a safe and nurturing space for young girls to thrive academically and personally.",
-      image: "https://images.pexels.com/photos/8613264/pexels-photo-8613264.jpeg?auto=compress&cs=tinysrgb&w=600",
-      beneficiaries: "350 Girls",
+      description: "This initiative empowers 250 adolescent girls through education, skill development, and awareness programs to enhance their confidence and decision-making abilities.",
+      detailedDescription: "Under the 'NIRMITI… A Gang of Girls' program launched from July 1, 2024, adolescent girls from tribal and rural areas receive training in education, health, personality development, career guidance, counseling, menstrual hygiene, self-defense, and leadership.",
+      image: "/Kishor Vikas Img.jpg",
+      beneficiaries: "250 Girls",
       status: "Active",
       category: "Women Empowerment"
     },
     {
+      id: "jadui-gullak",
       title: "Jadui Gullak - Financial Literacy",
-      description: "A financial literacy program designed for 100 children, teaching them savings habits, budget management, and financial decision-making skills.",
-      detailedDescription: "Jadui Gullak engages children in interactive games and activities that simulate real-life financial scenarios, helping them develop practical money management skills from a young age. The program aims to build a foundation for responsible financial behavior in adulthood.",
-      image: "https://images.pexels.com/photos/8101808/pexels-photo-8101808.jpeg?auto=compress&cs=tinysrgb&w=600",
-      beneficiaries: "100 Children",
+      description: "A financial literacy program designed for children, teaching them savings habits, budget management, and financial decision-making skills.",
+      detailedDescription: "Launched from January 1, 2024, this program provides guidance on financial literacy to students. Nationalized banking accounts are opened for children, spreading awareness about savings, proper use of money, and financial management. So far, 30 students have opened 'Jadui Gullak' accounts.",
+      image: "/Jadui Gulak Img.jpg",
+      beneficiaries: "385 Students (Target)",
       status: "Active",
       category: "Financial Education"
     },
     {
+      id: "digital-saksharta",
       title: "Digital Saksharta Program",
-      description: "A basic digital literacy program introducing 230 students and villagers from 5 villages to essential digital tools, online transactions, and cybersecurity awareness.",
-      detailedDescription: "Digital Saksharta bridges the digital divide by providing hands-on training in using computers, smartphones, and the internet. Participants learn about online safety, government e-services, and digital payments, empowering rural communities to participate in the digital economy.",
-      image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600",
-      beneficiaries: "230 Learners",
+      description: "A basic digital literacy program that introduces students and villagers to essential digital tools, online transactions, and cybersecurity awareness.",
+      detailedDescription: "Started from August 15, 2023, this program has trained more than 150 students from five villages. The program covers basic computer literacy and digital skills essential for modern life.",
+      image: "/Digital Saksharta Img.jpg",
+      beneficiaries: "150+ Students",
       status: "Active",
       category: "Digital Education"
     },
     {
+      id: "pankh-sapno-ki-udaan",
       title: "Pankh Sapno Ki Udaan",
-      description: "Education initiative serving 450 students from grades 1-5 across 16 villages with trained local women educators.",
-      detailedDescription: "This education-focused program provides daily learning sessions conducted by trained local women educators. It strengthens early childhood education, empowers women educators in rural areas, enhances academic performance, and integrates extracurricular activities and life skills.",
-      image: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=600",
+      description: "Educational initiative serving 450 students from grades 1-5 across 16 villages with trained local women educators.",
+      detailedDescription: "Operating since April 1, 2023, this project operates in 16 villages around the Tipeshwar Wildlife Sanctuary. Trained women educators appointed on honorarium basis in each village conduct daily 2-hour learning sessions for children, helping improve their academic performance and building strong connections with parents.",
+      image: "/Pankh Img 1.jpg",
       beneficiaries: "450 Students",
       status: "Active",
       category: "Education"
     },
     {
+      id: "nisarg-mitra-manch",
       title: "Nisarg Mitra Manch",
-      description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
-      detailedDescription: "Nisarg Mitra Manch encourages environmental conservation through afforestation drives, clean-up campaigns, biodiversity awareness sessions, and sustainable livelihood education. The platform promotes community participation in preserving natural resources around the Tipeshwar Wildlife Sanctuary.",
-      image: "https://images.pexels.com/photos/2990644/pexels-photo-2990644.jpeg?auto=compress&cs=tinysrgb&w=600",
-      beneficiaries: "16 Villages",
+      description: "A platform for environmental conservation activities, including afforestation drives, biodiversity awareness, and sustainable livelihood practices.",
+      detailedDescription: "This initiative focuses on environmental awareness through tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, environmental protection activities, and has over 80 active youth members.",
+      image: "/Nisarg Mitr Manch .jpg",
+      beneficiaries: "80+ Youth Members",
       status: "Active",
       category: "Environment"
+    },
+    {
+      id: "advanced-digital-literacy",
+      title: "Advanced Digital Literacy Programme",
+      description: "In rural areas, students are given advanced training in Coding, Tally, Web Development, Web Design, Cyber Security and other computer-related skills.",
+      detailedDescription: "The organization is trying to create employment-oriented skilled youth in backward areas. Through this project, more than 90 students have been empowered and guided for future employment or entrepreneurship. This initiative is supported by Grand Maratha Foundation.",
+      image: "/Digital Saksharta Img.jpg",
+      beneficiaries: "90+ Students",
+      status: "Active",
+      category: "Advanced Technology"
+    },
+    {
+      id: "jan-setu",
+      title: "Jan-Setu Program",
+      description: "The Jan-Setu program helps rural people in the areas surrounding the Tipeshwar Sanctuary to access government schemes, benefits, and services.",
+      detailedDescription: "It facilitates the submission of government forms, information access, and application assistance at the local level. The project aims to spread awareness about government schemes and provide assistance with form filling and documentation, especially for marginalized communities. The program started on April 1, 2025.",
+      image: "https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=600",
+      beneficiaries: "Rural Communities",
+      status: "Upcoming",
+      category: "Government Services"
     }
   ];
 
@@ -76,11 +105,6 @@ const ProjectsPreview = () => {
                     alt={project.title}
                     className="relative rounded-3xl shadow-2xl w-full h-64 sm:h-80 lg:h-96 object-cover hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {project.status}
-                    </span>
-                  </div>
                   <div className="absolute top-4 right-4">
                     <span className="bg-white/90 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">
                       {project.category}
@@ -110,12 +134,24 @@ const ProjectsPreview = () => {
                   </div>
                 </div>
                 
-                <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-8 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <button 
+                  onClick={() => navigate(`/projects/${project.id}`)}
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-8 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
                   View Details
                 </button>
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="text-center mt-12 lg:mt-16">
+          <p className="text-gray-600 mb-6 text-lg">
+            🌟 Join us in making a difference in rural Maharashtra
+          </p>
+          <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            Support Our Projects
+          </button>
         </div>
       </div>
     </section>

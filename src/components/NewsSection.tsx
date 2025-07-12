@@ -6,19 +6,19 @@ const NewsSection = () => {
     {
       title: "Empowering Future Minds: 10 Ways of Digital Learning",
       date: "Dec 15, 2024",
-      image: "https://images.pexels.com/photos/8101808/pexels-photo-8101808.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/Jadui Gulak Img.jpg",
       category: "Education"
     },
     {
       title: "The Role of Technology in Modern Charity Work",
       date: "Dec 10, 2024",
-      image: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/Pankh Img 1.jpg",
       category: "Technology"
     },
     {
       title: "Community Volunteers Making a Difference",
       date: "Dec 5, 2024",
-      image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "/Digital Saksharta Img.jpg",
       category: "Community"
     }
   ];

@@ -4,17 +4,17 @@ import { Target, Eye, Heart, Users, Leaf, GraduationCap, Award, Globe, Lightbulb
 const About = () => {
   const focusAreas = [
     { icon: Users, title: "Adolescent Development", color: "from-orange-400 to-red-500", description: "Empowering young minds through structured programs" },
-    { icon: GraduationCap, title: "Digital Education", color: "from-blue-400 to-blue-600", description: "Bridging the digital divide in rural communities" },
-    { icon: Heart, title: "Women Empowerment", color: "from-pink-400 to-pink-600", description: "Building stronger, more inclusive communities" },
+    { icon: GraduationCap, title: "Education and Skill Development", color: "from-blue-400 to-blue-600", description: "Providing quality education and skill training" },
+    { icon: Heart, title: "Women and Adolescent Empowerment", color: "from-pink-400 to-pink-600", description: "Building stronger, more inclusive communities" },
     { icon: Leaf, title: "Environmental Conservation", color: "from-green-400 to-green-600", description: "Protecting our natural resources for future generations" },
-    { icon: Award, title: "Financial Literacy", color: "from-purple-400 to-purple-600", description: "Teaching responsible financial management" },
-    { icon: Globe, title: "Sustainable Agriculture", color: "from-yellow-400 to-yellow-600", description: "Promoting eco-friendly farming practices" }
+    { icon: Award, title: "Digital and Financial Literacy", color: "from-purple-400 to-purple-600", description: "Teaching digital skills and financial management" },
+    { icon: Globe, title: "Rural Governance Awareness", color: "from-yellow-400 to-yellow-600", description: "Promoting awareness about government schemes and services" }
   ];
 
   const values = [
-    { icon: Heart, title: "Compassion", description: "We approach every community with empathy and understanding" },
-    { icon: Award, title: "Excellence", description: "We strive for the highest quality in all our programs" },
-    { icon: Users, title: "Collaboration", description: "We believe in the power of community-driven solutions" },
+    { icon: Heart, title: "Transparency", description: "We maintain complete transparency in all our operations and fund utilization" },
+    { icon: Award, title: "Morality", description: "We uphold the highest moral standards in our work and interactions" },
+    { icon: Users, title: "Discipline", description: "We follow disciplined approaches to achieve sustainable development" },
     { icon: Lightbulb, title: "Innovation", description: "We continuously seek creative approaches to rural challenges" }
   ];
 
@@ -32,18 +32,19 @@ const About = () => {
                 <span className="text-gray-900">Dedicated to </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">Rural Development</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Janhit Bahuuddeshiya Gramin Vikas Sanstha is a non-profit organization working 
-                actively in 16 tribal villages surrounding the Tipeshwar Wildlife Sanctuary in Maharashtra, India.
+                Established on March 12, 1997, in Pandharkawada, Yavatmal, Janhit is a voluntary, non-profit organization 
+                registered under the Charitable Commissioner and the Ministry of Home Affairs, Government of India. 
+                We are authorized under 12A and 80G for tax-exempt donations and are CSR-registered (CSR00045923).
               </p>
             </div>
             
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-500 rounded-3xl transform rotate-3"></div>
-              <img 
-                src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Rural development work" 
-                className="relative rounded-3xl shadow-2xl w-full h-96 object-cover transform -rotate-1"
-              />
+                              <img 
+                  src="/ABOUT JANHIT IMAGE .jpg" 
+                  alt="About Janhit organization" 
+                  className="relative rounded-3xl shadow-2xl w-full h-96 object-cover transform -rotate-1"
+                />
             </div>
           </div>
         </div>
@@ -61,9 +62,9 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Our Mission</h2>
               </div>
               <p className="text-gray-600 text-lg leading-relaxed">
-                To uplift rural and tribal communities through holistic development initiatives 
-                focused on education, digital empowerment, women development, financial literacy, 
-                sustainable agriculture, and environmental conservation.
+                To implement educational initiatives, skill development, environmental awareness programs, 
+                and cooperative systems in remote and tribal areas to promote self-reliant livelihood 
+                and community empowerment.
               </p>
             </div>
             
@@ -75,8 +76,8 @@ const About = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Our Vision</h2>
               </div>
               <p className="text-gray-600 text-lg leading-relaxed">
-                We envision a world where every individual—regardless of their background—has 
-                access to basic necessities, education, and opportunities for personal and community growth.
+                To create an ideal society by providing education, skill development, environmental awareness, 
+                cooperation, and self-reliant livelihood opportunities to rural and tribal citizens.
               </p>
             </div>
           </div>
@@ -89,7 +90,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-gray-900 mb-6">Our Areas of Focus</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive interventions designed to be inclusive, educational, and empowering
+              For more than two decades, Janhit has consistently delivered impactful programs in over 100 villages, creating sustainable change through grassroots action.
             </p>
           </div>
           
@@ -137,20 +138,20 @@ const About = () => {
           <h2 className="text-4xl font-bold text-white mb-12">Our Impact</h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
-              <div className="text-4xl font-bold text-white mb-2">16</div>
+              <div className="text-4xl font-bold text-white mb-2">20</div>
               <div className="text-orange-100">Tribal Villages</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+              <div className="text-4xl font-bold text-white mb-2">100+</div>
+              <div className="text-orange-100">Villages Impacted</div>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
+              <div className="text-4xl font-bold text-white mb-2">27+</div>
+              <div className="text-orange-100">Years of Service</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
               <div className="text-4xl font-bold text-white mb-2">1000+</div>
               <div className="text-orange-100">Lives Transformed</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
-              <div className="text-4xl font-bold text-white mb-2">5+</div>
-              <div className="text-orange-100">Years of Service</div>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
-              <div className="text-4xl font-bold text-white mb-2">5</div>
-              <div className="text-orange-100">Active Projects</div>
             </div>
           </div>
         </div>
