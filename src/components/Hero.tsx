@@ -17,7 +17,7 @@ const Hero = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">Education</span> & Development
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-lg">
-                Founded in 1997, Janhit Bahuuddeshiya Gramin Vikas Sanstha has been actively working 
+                Founded in 1998, Janhit Bahuuddeshiya Gramin Vikas Sanstha has been actively working 
                 in 20 tribal villages surrounding the Tipeshwar Wildlife Sanctuary, focusing on 
                 adolescent development, digital education, women empowerment, and environmental conservation.
               </p>

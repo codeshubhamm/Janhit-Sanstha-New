@@ -22,7 +22,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
-              Established in 1997, empowering rural and tribal communities in Maharashtra through education, 
+              Established in 1998, empowering rural and tribal communities in Maharashtra through education, 
               digital literacy, women empowerment, and environmental conservation initiatives.
             </p>
             <div className="flex space-x-4">

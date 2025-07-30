@@ -15,7 +15,7 @@ const AboutSection = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">Rural Development</span>
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
-              Founded in 1997, Janhit Bahuuddeshiya Gramin Vikas Sanstha is a registered non-profit organization 
+              Founded in 1998, Janhit Bahuuddeshiya Gramin Vikas Sanstha is a registered non-profit organization 
               working actively in 20 tribal villages surrounding the Tipeshwar Wildlife Sanctuary in Yavatmal, Maharashtra.
             </p>
             
