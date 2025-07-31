@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
-import { Heart, Building, Shield, CheckCircle, QrCode } from 'lucide-react';
+import React from 'react';
+import { Building, Shield, CheckCircle, QrCode } from 'lucide-react';
 
 const Donate = () => {
-  const [selectedAmount, setSelectedAmount] = useState(1000);
-  const [customAmount, setCustomAmount] = useState('');
-  const [donationType, setDonationType] = useState('one-time');
-
-  const predefinedAmounts = [500, 1000, 2500, 5000, 10000];
 
 
 
@@ -32,76 +27,7 @@ const Donate = () => {
       <section className="py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-2xl border border-orange-100 overflow-hidden">
-            <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-6 sm:p-8 text-white text-center">
-              <Heart className="h-12 w-12 mx-auto mb-4" />
-              <h2 className="text-2xl sm:text-3xl font-bold mb-2">Make a Difference Today</h2>
-              <p className="text-orange-100">Choose your donation amount and help transform lives</p>
-            </div>
-
             <div className="p-6 sm:p-8 lg:p-10">
-              {/* Donation Type */}
-              <div className="mb-8">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Donation Type</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <button
-                    onClick={() => setDonationType('one-time')}
-                    className={`p-4 rounded-xl border-2 transition-all duration-300 ${
-                      donationType === 'one-time'
-                        ? 'border-orange-500 bg-orange-50 text-orange-700'
-                        : 'border-gray-200 hover:border-orange-300'
-                    }`}
-                  >
-                    <div className="font-semibold">One-time</div>
-                    <div className="text-sm text-gray-600">Single donation</div>
-                  </button>
-                  <button
-                    onClick={() => setDonationType('monthly')}
-                    className={`p-4 rounded-xl border-2 transition-all duration-300 ${
-                      donationType === 'monthly'
-                        ? 'border-orange-500 bg-orange-50 text-orange-700'
-                        : 'border-gray-200 hover:border-orange-300'
-                    }`}
-                  >
-                    <div className="font-semibold">Monthly</div>
-                    <div className="text-sm text-gray-600">Recurring support</div>
-                  </button>
-                </div>
-              </div>
-
-              {/* Amount Selection */}
-              <div className="mb-8">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Select Amount (₹)</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-4">
-                  {predefinedAmounts.map((amount) => (
-                    <button
-                      key={amount}
-                      onClick={() => {
-                        setSelectedAmount(amount);
-                        setCustomAmount('');
-                      }}
-                      className={`p-3 sm:p-4 rounded-xl border-2 font-semibold transition-all duration-300 ${
-                        selectedAmount === amount && !customAmount
-                          ? 'border-orange-500 bg-orange-500 text-white'
-                          : 'border-gray-200 hover:border-orange-300 text-gray-700'
-                      }`}
-                    >
-                      ₹{amount.toLocaleString()}
-                    </button>
-                  ))}
-                </div>
-                <div>
-                  <input
-                    type="number"
-                    placeholder="Enter custom amount"
-                    value={customAmount}
-                    onChange={(e) => {
-                      setCustomAmount(e.target.value);
-                      setSelectedAmount(0);
-                    }}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  />
-                </div>
-              </div>
 
               {/* Bank Transfer Details */}
               <div className="mb-8">
