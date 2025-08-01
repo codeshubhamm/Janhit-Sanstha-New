@@ -64,9 +64,13 @@ const Donate = () => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Payment via QR Code</h3>
                 <div className="bg-gray-50 p-8 rounded-xl text-center border border-gray-200">
                   <div className="bg-white p-6 rounded-2xl inline-block shadow-lg">
-                    <QrCode className="h-32 w-32 text-gray-400 mx-auto mb-4" />
-                    <p className="text-sm text-gray-600">Scan QR Code for Quick Payment</p>
-                    <p className="text-xs text-gray-500 mt-2">QR Code will be provided upon request</p>
+                    <img 
+                      src="/QR CODE OF JANHIT SANSTHA .jpg" 
+                      alt="Janhit Sanstha QR Code" 
+                      className="h-48 w-48 mx-auto mb-4 rounded-lg shadow-md"
+                    />
+                    <p className="text-sm text-gray-600 font-medium">Scan QR Code for Quick Payment</p>
+                    <p className="text-xs text-gray-500 mt-2">Use any UPI app to scan and donate</p>
                   </div>
                 </div>
               </div>
@@ -97,9 +101,11 @@ const Donate = () => {
                     For any queries regarding donations or to get the QR code, please contact us:
                   </p>
                   <div className="space-y-2 text-sm">
-                    <div><strong>Email:</strong> janhitsanstha@gmail.com</div>
-                    <div><strong>Phone:</strong> +91 98765 43210</div>
-                    <div><strong>Address:</strong> Pandharkawada, Dist. Yavatmal, Maharashtra - 444702</div>
+                    <div><strong>Email:</strong> jbgvsanstha@gmail.com</div>
+                    <div><strong>Primary:</strong> +91 8275394711</div>
+                    <div><strong>Secondary:</strong> +91 8275394611</div>
+                    <div><strong>Emergency:</strong> +91 8698122202</div>
+                    <div><strong>Address:</strong> Telangtakli, Tq Kelapur, Dist Yavatmal - 445302</div>
                   </div>
                 </div>
               </div>

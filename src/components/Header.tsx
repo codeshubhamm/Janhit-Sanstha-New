@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Menu, Search, Globe, X } from 'lucide-react';
+import { Heart, Menu, Search, Facebook, Instagram, Youtube, MessageCircle, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
@@ -83,7 +83,40 @@ const Header = () => {
           
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Globe className="h-5 w-5 text-gray-500 cursor-pointer hover:text-orange-500 transition-colors" />
+            <div className="flex items-center space-x-2">
+              <a 
+                href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
+              >
+                <Facebook className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
+              </a>
+              <a 
+                href="https://www.instagram.com/janhitsanstha?igsh=MTgzOHEyYzR5Nmt4Zw==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
+              >
+                <Instagram className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
+              </a>
+              <a 
+                href="https://whatsapp.com/channel/0029VaftLs52f3ELNd1aqA0X" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
+              >
+                <MessageCircle className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
+              </a>
+              <a 
+                href="https://youtube.com/@janhitsanstha?si=LYErzyRrKdp6j8Sm" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
+              >
+                <Youtube className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
+              </a>
+            </div>
             <button 
               onClick={() => navigate('/donate')}
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 lg:px-8 py-2 sm:py-3 rounded-xl text-sm sm:text-base font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -179,8 +212,41 @@ const Header = () => {
             {/* Mobile Additional Actions */}
             <div className="flex items-center justify-between pt-4 border-t border-orange-100">
               <div className="flex items-center space-x-4">
-                <Globe className="h-5 w-5 text-gray-500 cursor-pointer hover:text-orange-500 transition-colors" />
-                <span className="text-sm text-gray-600">Language</span>
+                <span className="text-sm text-gray-600">Follow Us:</span>
+                <div className="flex items-center space-x-2">
+                  <a 
+                    href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
+                  >
+                    <Facebook className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
+                  </a>
+                  <a 
+                    href="https://www.instagram.com/janhitsanstha?igsh=MTgzOHEyYzR5Nmt4Zw==" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
+                  >
+                    <Instagram className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
+                  </a>
+                  <a 
+                    href="https://whatsapp.com/channel/0029VaftLs52f3ELNd1aqA0X" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
+                  >
+                    <MessageCircle className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
+                  </a>
+                  <a 
+                    href="https://youtube.com/@janhitsanstha?si=LYErzyRrKdp6j8Sm" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
+                  >
+                    <Youtube className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
+                  </a>
+                </div>
               </div>
             </div>
           </nav>

@@ -42,9 +42,9 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Our Location</h3>
                     <p className="text-gray-600">
-                      Pandharkawada<br />
-                      Dist. Yavatmal, Maharashtra, India<br />
-                      PIN: 444702
+                      Telangtakli<br />
+                      Tq Kelapur, Dist. Yavatmal, Maharashtra, India<br />
+                      PIN: 445302
                     </p>
                   </div>
                 </div>
@@ -56,9 +56,9 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone Numbers</h3>
                     <p className="text-gray-600">
-                      Primary: +91 98765 43210<br />
-                      Secondary: +91 87654 32109<br />
-                      Emergency: +91 76543 21098
+                      Primary: +91 8275394711<br />
+                      Secondary: +91 8275394611<br />
+                      Emergency: +91 8698122202
                     </p>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Addresses</h3>
                     <p className="text-gray-600">
-                      General: janhitsanstha@gmail.com<br />
+                      General: jbgvsanstha@gmail.com<br />
                       Programs: programs@janhitsanstha.org<br />
                       Donations: donate@janhitsanstha.org
                     </p>
@@ -179,7 +179,7 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Find Us</h2>
             <p className="text-xl text-gray-600">
-              Located in Pandharkawada, Yavatmal district, serving tribal communities around Tipeshwar Wildlife Sanctuary
+                              Located in Telangtakli, Tq Kelapur, Yavatmal district, serving tribal communities around Tipeshwar Wildlife Sanctuary
             </p>
           </div>
           

@@ -75,15 +75,26 @@ const TeamSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                   <div className="flex space-x-3">
-                    <div className="bg-white/20 backdrop-blur-sm p-2 rounded-lg cursor-pointer hover:bg-white/30 transition-colors">
+                    <a 
+                      href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-white/20 backdrop-blur-sm p-2 rounded-lg cursor-pointer hover:bg-white/30 transition-colors"
+                    >
                       <Linkedin className="h-5 w-5 text-white" />
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm p-2 rounded-lg cursor-pointer hover:bg-white/30 transition-colors">
+                    </a>
+                    <a 
+                      href="mailto:jbgvsanstha@gmail.com"
+                      className="bg-white/20 backdrop-blur-sm p-2 rounded-lg cursor-pointer hover:bg-white/30 transition-colors"
+                    >
                       <Mail className="h-5 w-5 text-white" />
-                    </div>
-                    <div className="bg-white/20 backdrop-blur-sm p-2 rounded-lg cursor-pointer hover:bg-white/30 transition-colors">
+                    </a>
+                    <a 
+                      href="tel:+918275394711"
+                      className="bg-white/20 backdrop-blur-sm p-2 rounded-lg cursor-pointer hover:bg-white/30 transition-colors"
+                    >
                       <Phone className="h-5 w-5 text-white" />
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>

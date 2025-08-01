@@ -4,76 +4,104 @@ import { Linkedin, Mail, Phone } from 'lucide-react';
 const Team = () => {
   const teamMembers = [
     {
-      name: "Dr. Rajesh Sharma",
-      position: "Founder & Director",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=300",
-      bio: "Leading rural development initiatives for over 15 years with expertise in community mobilization and sustainable development programs.",
-      specialization: "Community Development",
-      education: "PhD in Rural Development",
-      experience: "15+ years"
+      name: "Mr. Ravindra Bomenwar",
+      position: "Founder of Janhit Sanstha",
+      bio: "Visionary leader who established Janhit Sanstha with the mission to empower rural communities through sustainable development programs.",
+      specialization: "Leadership & Vision",
+      education: "Social Development",
+      experience: "Founder"
     },
     {
-      name: "Priya Patel",
-      position: "Program Manager",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300",
-      bio: "Specialist in women empowerment and adolescent development programs with a focus on creating sustainable impact.",
+      name: "Mr. Subodh Kalpande",
+      position: "President of Janhit Sanstha",
+      bio: "Leading the organization with strategic vision and commitment to rural development initiatives across Maharashtra.",
+      specialization: "Strategic Leadership",
+      education: "BA",
+      experience: "President"
+    },
+    {
+      name: "Mr. Swapnil Bomenwar",
+      position: "Secretary",
+      bio: "Managing administrative operations and ensuring effective coordination of all organizational activities and programs.",
+      specialization: "Administration",
+      education: "BA",
+      experience: "Secretary"
+    },
+    {
+      name: "Shardha Bomenwar",
+      position: "Project Coordinator of Kishori Vikas",
+      bio: "Dedicated to adolescent development programs, focusing on empowering young girls through education and skill development.",
+      specialization: "Adolescent Development",
+      education: "MA in History, B.Ed",
+      experience: "Project Coordinator"
+    },
+    {
+      name: "Shewta Kalpande",
+      position: "Women Empowerment",
+      bio: "Leading initiatives focused on women's empowerment, skill development, and creating opportunities for rural women.",
       specialization: "Women Empowerment",
-      education: "Masters in Social Work",
-      experience: "10+ years"
+      education: "MA in English Literature, M.Ed",
+      experience: "Women Empowerment Coordinator"
     },
     {
-      name: "Amit Kumar",
-      position: "Education Coordinator",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=300",
-      bio: "Dedicated to improving educational outcomes in rural and tribal communities through innovative teaching methods.",
-      specialization: "Education & Digital Literacy",
-      education: "M.Ed in Educational Technology",
-      experience: "8+ years"
+      name: "Sagar Bawne",
+      position: "CEO of Janhit Sanstha",
+      bio: "Chief Executive Officer driving organizational growth and ensuring effective implementation of all development programs.",
+      specialization: "Executive Leadership",
+      education: "BCA, MCA, BSW",
+      experience: "CEO"
     },
     {
-      name: "Sunita Devi",
-      position: "Field Coordinator",
-      image: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=300",
-      bio: "Grassroots worker with deep understanding of tribal community needs and local cultural dynamics.",
-      specialization: "Community Outreach",
-      education: "BA in Social Sciences",
-      experience: "12+ years"
+      name: "Bharat Dorshettiwar",
+      position: "Project Coordinator of Advanced Digital Literacy Program",
+      bio: "Spearheading digital literacy initiatives to bridge the digital divide in rural communities.",
+      specialization: "Digital Literacy",
+      education: "BE in Mechanical Engineering",
+      experience: "Digital Program Coordinator"
     },
     {
-      name: "Vikash Singh",
-      position: "Financial Literacy Expert",
-      image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300",
-      bio: "Expert in designing financial education programs for rural populations with focus on practical implementation.",
-      specialization: "Financial Education",
-      education: "MBA in Finance",
-      experience: "7+ years"
+      name: "Rajvivekanand Bokade",
+      position: "Digital Tutor at Advanced Digital Literacy Program",
+      bio: "Providing hands-on digital education and training to rural communities, making technology accessible to all.",
+      specialization: "Digital Education",
+      education: "BE in Information Technology",
+      experience: "Digital Tutor"
     },
     {
-      name: "Meera Joshi",
-      position: "Environmental Coordinator",
-      image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=300",
-      bio: "Environmental scientist working on conservation projects around Tipeshwar Wildlife Sanctuary.",
-      specialization: "Environmental Conservation",
-      education: "MSc in Environmental Science",
-      experience: "9+ years"
+      name: "Achal Chittalwar",
+      position: "Digital Tutor at Advanced Digital Literacy Program",
+      bio: "Committed to teaching digital skills and empowering rural communities with technological knowledge.",
+      specialization: "Digital Skills Training",
+      education: "BE in Computer Science",
+      experience: "Digital Tutor"
     }
   ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-orange-50 via-white to-orange-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center bg-gradient-to-r from-orange-100 to-orange-200 text-orange-800 px-6 py-3 rounded-full text-sm font-medium mb-6 shadow-lg">
-            👥 Our Team
+      <section className="bg-gradient-to-br from-orange-50 via-white to-orange-50 py-20 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-10 left-10 w-20 h-20 bg-orange-200 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-10 right-10 w-32 h-32 bg-orange-300 rounded-full opacity-10 animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-orange-100 rounded-full opacity-30 animate-bounce"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+          <div className="inline-flex items-center bg-white/80 backdrop-blur-sm text-orange-600 px-6 py-3 rounded-full text-sm font-medium mb-6 shadow-lg border border-orange-200">
+            <span className="w-2 h-2 bg-orange-500 rounded-full mr-3 animate-pulse"></span>
+            Meet Our Team
           </div>
-          <h1 className="text-6xl font-bold text-gray-900 mb-6">
-            Meet the <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">Change Makers</span>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">Team</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our dedicated team of professionals and community workers are committed to 
-            transforming lives in rural Maharashtra through innovative development programs.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Meet the dedicated professionals committed to transforming lives in rural Maharashtra through innovative development programs.
           </p>
+          
+          {/* Animated underline */}
+          <div className="mt-8 flex justify-center">
+            <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full animate-pulse"></div>
+          </div>
         </div>
       </section>
 
@@ -82,49 +110,48 @@ const Team = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-500 group hover:-translate-y-3 border border-orange-100">
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute bottom-6 left-6 right-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                    <div className="flex space-x-3">
-                      <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl cursor-pointer hover:bg-white/30 transition-colors">
-                        <Linkedin className="h-5 w-5 text-white" />
-                      </div>
-                      <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl cursor-pointer hover:bg-white/30 transition-colors">
-                        <Mail className="h-5 w-5 text-white" />
-                      </div>
-                      <div className="bg-white/20 backdrop-blur-sm p-3 rounded-xl cursor-pointer hover:bg-white/30 transition-colors">
-                        <Phone className="h-5 w-5 text-white" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="p-8">
-                  <div className="mb-6">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                    <p className="text-orange-600 font-semibold text-lg">{member.position}</p>
-                  </div>
+              <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 group border border-gray-100 overflow-hidden hover:-translate-y-2">
+                <div className="relative">
+                  {/* Gradient overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
-                  <div className="space-y-4 mb-6">
-                    <div>
-                      <span className="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
-                        {member.specialization}
-                      </span>
+                  <div className="p-8 relative">
+                    <div className="mb-6">
+                      <div className="flex items-center mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <span className="text-white font-bold text-lg">{member.name.charAt(0)}</span>
+                        </div>
+                        <div>
+                          <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">{member.name}</h3>
+                          <p className="text-orange-600 font-semibold text-lg">{member.position}</p>
+                        </div>
+                      </div>
                     </div>
                     
-                    <div className="space-y-2 text-sm text-gray-600">
-                      <div><strong>Education:</strong> {member.education}</div>
-                      <div><strong>Experience:</strong> {member.experience}</div>
+                    <div className="space-y-4 mb-6">
+                      <div>
+                        <span className="inline-block bg-orange-50 text-orange-700 px-4 py-2 rounded-xl text-sm font-medium border border-orange-200 group-hover:bg-orange-100 group-hover:border-orange-300 transition-all duration-300">
+                          {member.specialization}
+                        </span>
+                      </div>
+                      
+                      <div className="space-y-3 text-sm text-gray-600">
+                        <div className="flex items-center">
+                          <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                          <span><strong>Education:</strong> {member.education}</span>
+                        </div>
+                        <div className="flex items-center">
+                          <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                          <span><strong>Experience:</strong> {member.experience}</span>
+                        </div>
+                      </div>
                     </div>
+                    
+                    <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">{member.bio}</p>
+                    
+                    {/* Hover effect line */}
+                    <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-600 group-hover:w-full transition-all duration-500"></div>
                   </div>
-                  
-                  <p className="text-gray-600 leading-relaxed">{member.bio}</p>
                 </div>
               </div>
             ))}
@@ -133,47 +160,72 @@ const Team = () => {
       </section>
 
       {/* Join Our Team */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-orange-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Join Our Team</h2>
-          <p className="text-xl text-orange-100 mb-8">
-            Are you passionate about rural development? We're always looking for dedicated individuals to join our mission.
+      <section className="py-16 bg-gradient-to-r from-gray-50 to-orange-50 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-orange-100/20 to-transparent"></div>
+        
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Join Our Team</h2>
+          <p className="text-gray-600 mb-8 text-lg">
+            We're always looking for dedicated individuals to join our mission.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-orange-600 px-10 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg">
-              View Open Positions
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <button className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <span className="flex items-center justify-center">
+                View Open Positions
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
             </button>
-            <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold hover:bg-white hover:text-orange-600 transition-all duration-300">
-              Send Your Resume
+            <button className="group border-2 border-orange-600 text-orange-600 px-10 py-4 rounded-xl font-semibold hover:bg-orange-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+              <span className="flex items-center justify-center">
+                Send Your Resume
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                </svg>
+              </span>
             </button>
           </div>
         </div>
       </section>
 
       {/* Team Values */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">What Drives Our Team</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">What Drives Our Team</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Our team is united by shared values and a common commitment to rural development
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-orange-50 rounded-3xl">
-              <div className="text-4xl mb-4">🎯</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Purpose-Driven</h3>
+            <div className="group text-center p-8 border border-gray-200 rounded-2xl hover:border-orange-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 bg-white">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors duration-300">Purpose-Driven</h3>
               <p className="text-gray-600">Every team member is motivated by the desire to create meaningful change in rural communities.</p>
             </div>
-            <div className="text-center p-8 bg-orange-50 rounded-3xl">
-              <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Collaborative</h3>
+            <div className="group text-center p-8 border border-gray-200 rounded-2xl hover:border-orange-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 bg-white">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors duration-300">Collaborative</h3>
               <p className="text-gray-600">We believe in the power of teamwork and community-driven solutions.</p>
             </div>
-            <div className="text-center p-8 bg-orange-50 rounded-3xl">
-              <div className="text-4xl mb-4">💡</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Innovative</h3>
+            <div className="group text-center p-8 border border-gray-200 rounded-2xl hover:border-orange-300 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 bg-white">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 group-hover:text-orange-600 transition-colors duration-300">Innovative</h3>
               <p className="text-gray-600">We continuously seek creative approaches to address rural development challenges.</p>
             </div>
           </div>

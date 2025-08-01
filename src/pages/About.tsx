@@ -32,7 +32,7 @@ const About = () => {
                 <span className="text-gray-900">Dedicated to </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">Rural Development</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Established on March 12, 1998, in Pandharkawada, Yavatmal, Janhit is a voluntary, non-profit organization 
+                Established on March 12, 1998, in Telangtakli, Tq Kelapur, Yavatmal, Janhit is a voluntary, non-profit organization 
                 registered under the Charitable Commissioner and the Ministry of Home Affairs, Government of India. 
                 We are authorized under 12A and 80G for tax-exempt donations and are CSR-registered (CSR00045923).
               </p>

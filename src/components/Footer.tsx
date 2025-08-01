@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Heart, Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
@@ -26,18 +26,38 @@ const Footer = () => {
               digital literacy, women empowerment, and environmental conservation initiatives.
             </p>
             <div className="flex space-x-4">
-              <div className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer">
+              <a 
+                href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer"
+              >
                 <Facebook className="h-5 w-5" />
-              </div>
-              <div className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer">
-                <Twitter className="h-5 w-5" />
-              </div>
-              <div className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer">
+              </a>
+              <a 
+                href="https://www.instagram.com/janhitsanstha?igsh=MTgzOHEyYzR5Nmt4Zw==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer"
+              >
                 <Instagram className="h-5 w-5" />
-              </div>
-              <div className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer">
+              </a>
+              <a 
+                href="https://whatsapp.com/channel/0029VaftLs52f3ELNd1aqA0X" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer"
+              >
+                <MessageCircle className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://youtube.com/@janhitsanstha?si=LYErzyRrKdp6j8Sm" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer"
+              >
                 <Youtube className="h-5 w-5" />
-              </div>
+              </a>
             </div>
           </div>
           
@@ -69,15 +89,23 @@ const Footer = () => {
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-600">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-orange-500 flex-shrink-0 mt-1" />
-                <span>Pandharkawada, Dist. Yavatmal, Maharashtra, India - 444702</span>
+                <span>Telangtakli, Tq Kelapur, Dist Yavatmal - 445302</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-500 flex-shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 8275394711</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                <span>+91 8275394611</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-orange-500 flex-shrink-0" />
+                <span>Emergency: +91 8698122202</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-orange-500 flex-shrink-0" />
-                <span>janhitsanstha@gmail.com</span>
+                <span>jbgvsanstha@gmail.com</span>
               </div>
             </div>
             
