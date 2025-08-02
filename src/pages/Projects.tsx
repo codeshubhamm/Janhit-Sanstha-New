@@ -178,7 +178,10 @@ const Projects = () => {
             Join us in transforming more lives across rural Maharashtra through our impactful projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-orange-600 px-10 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg">
+            <button 
+              onClick={() => navigate('/donate')}
+              className="bg-white text-orange-600 px-10 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg"
+            >
               Support Our Projects
             </button>
             <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold hover:bg-white hover:text-orange-600 transition-all duration-300">

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProjectsSection = () => {
+  const navigate = useNavigate();
   const projects = [
     {
       title: "Kishori Vikas Project",
@@ -112,7 +114,10 @@ const ProjectsSection = () => {
           <p className="text-gray-600 mb-6 text-lg">
             🌟 Join us in making a difference in rural Maharashtra
           </p>
-          <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <button 
+            onClick={() => navigate('/donate')}
+            className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          >
             Support Our Projects
           </button>
         </div>

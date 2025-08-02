@@ -71,8 +71,11 @@ const GetInvolvedSection = () => {
           <p className="text-gray-600 mb-6 text-lg">
             🌟 Join hundreds of supporters making a difference in rural Maharashtra
           </p>
-          <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-            Start Your Journey Today
+          <button 
+            onClick={() => navigate('/donate')}
+            className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+          >
+            Support Our Journey
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -64,23 +64,21 @@ const Footer = () => {
           <div>
             <h3 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-orange-600">Quick Links</h3>
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600">
-              <li><a href="#" className="hover:text-orange-500 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Our Mission</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Our Projects</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Team</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Annual Reports</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Transparency</a></li>
+              <li><Link to="/about" className="hover:text-orange-500 transition-colors">About Us</Link></li>
+              <li><Link to="/about" className="hover:text-orange-500 transition-colors">Our Mission</Link></li>
+              <li><Link to="/projects" className="hover:text-orange-500 transition-colors">Our Projects</Link></li>
+              <li><Link to="/team" className="hover:text-orange-500 transition-colors">Team</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6 text-orange-600">Our Projects</h3>
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600">
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Kishori Vikas Project</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Jadui Gullak</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Digital Saksharta</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Pankh Sapno Ki Udaan</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Nisarg Mitra Manch</a></li>
+              <li><Link to="/projects/kishori-vikas" className="hover:text-orange-500 transition-colors">Kishori Vikas Project</Link></li>
+              <li><Link to="/projects/jadui-gullak" className="hover:text-orange-500 transition-colors">Jadui Gullak</Link></li>
+              <li><Link to="/projects/digital-saksharta" className="hover:text-orange-500 transition-colors">Digital Saksharta</Link></li>
+              <li><Link to="/projects/pankh-sapno-ki-udaan" className="hover:text-orange-500 transition-colors">Pankh Sapno Ki Udaan</Link></li>
+              <li><Link to="/projects/nisarg-mitra-manch" className="hover:text-orange-500 transition-colors">Nisarg Mitra Manch</Link></li>
             </ul>
           </div>
           
@@ -128,7 +126,6 @@ const Footer = () => {
             <div className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-sm text-gray-500 hover:text-orange-500 transition-colors">Privacy Policy</a>
               <a href="#" className="text-sm text-gray-500 hover:text-orange-500 transition-colors">Terms of Service</a>
-              <a href="#" className="text-sm text-gray-500 hover:text-orange-500 transition-colors">Transparency</a>
             </div>
           </div>
         </div>
