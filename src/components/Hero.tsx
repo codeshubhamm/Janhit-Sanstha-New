@@ -46,8 +46,8 @@ const Hero = () => {
               className="relative rounded-3xl shadow-2xl w-full h-auto max-h-[1400px] lg:max-h-[1600px] xl:max-h-[1800px] object-contain transition-transform duration-500"
             />
             <div className="absolute -bottom-3 sm:-bottom-6 -left-3 sm:-left-6 bg-white p-3 sm:p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
-              <div className="text-lg sm:text-2xl font-bold text-orange-600">250+</div>
-              <div className="text-xs sm:text-sm text-gray-600">Students in Education Program</div>
+              <div className="text-lg sm:text-2xl font-bold text-orange-600">315+</div>
+              <div className="text-xs sm:text-sm text-gray-600">Students In Primary Education</div>
             </div>
           </div>
         </div>
