@@ -161,7 +161,7 @@ const Header = () => {
                     isActive('/trusty') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
                   }`}
                 >
-                  Trusty
+                  Trustee
                 </Link>
               </div>
             </div>
@@ -322,7 +322,7 @@ const Header = () => {
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Trusty
+              Trustee
             </Link>
             <Link 
               to="/contact" 

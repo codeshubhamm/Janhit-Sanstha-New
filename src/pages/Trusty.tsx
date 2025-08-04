@@ -13,17 +13,16 @@ const Trusty = () => {
             <span className="text-gray-900">Board </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-orange-600">Trustees</span>
           </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Our dedicated board of trustees ensures proper governance and strategic direction for all our initiatives.
+          </p>
         </div>
       </section>
 
       {/* Content Section */}
-      <section className="py-20">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Board of Trustees</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our dedicated board of trustees ensures proper governance and strategic direction for all our initiatives.
-            </p>
+          <div className="text-center mb-8">
           </div>
           
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
