@@ -11,6 +11,8 @@ import Contact from './pages/Contact';
 import Donate from './pages/Donate';
 import ProjectDetail from './pages/ProjectDetail';
 import Media from './pages/Media';
+import CovidPandemic from './pages/CovidPandemic';
+import Trusty from './pages/Trusty';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/media" element={<Media />} />
+          <Route path="/covid-pandemic" element={<CovidPandemic />} />
+          <Route path="/trusty" element={<Trusty />} />
           <Route path="/projects/:projectId" element={<ProjectDetail />} />
         </Routes>
         <Footer />

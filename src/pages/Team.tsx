@@ -37,11 +37,19 @@ const Team = () => {
     },
     {
       name: "Shewta Kalpande",
-      position: "Women Empowerment",
-      bio: "Leading initiatives focused on women's empowerment, skill development, and creating opportunities for rural women.",
-      specialization: "Women Empowerment",
+      position: "Project Coordinator of Pankh and Women Empowerment",
+      bio: "Leading initiatives focused on women's empowerment, skill development, and creating opportunities for rural women through the Pankh program.",
+      specialization: "Women Empowerment & Pankh Program",
       education: "MA in English Literature, M.Ed",
-      experience: "Women Empowerment Coordinator"
+      experience: "Project Coordinator"
+    },
+    {
+      name: "Chiranjiv Betwar",
+      position: "Tutor of Tally",
+      bio: "Providing comprehensive training in Tally software and accounting practices to empower rural communities with financial literacy skills.",
+      specialization: "Finance",
+      education: "B.Com and Tally",
+      experience: "Tally Tutor"
     },
     {
       name: "Sagar Bawne",

@@ -7,6 +7,7 @@ const Header = () => {
   const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+  const [isTeamDropdownOpen, setIsTeamDropdownOpen] = useState(false);
   
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -26,6 +27,10 @@ const Header = () => {
 
   const closeAboutDropdown = () => {
     setIsAboutDropdownOpen(false);
+  };
+
+  const closeTeamDropdown = () => {
+    setIsTeamDropdownOpen(false);
   };
 
   return (
@@ -111,13 +116,55 @@ const Header = () => {
             </Link>
             
             <Link 
-              to="/team" 
+              to="/covid-pandemic" 
               className={`font-medium transition-all duration-300 hover:text-orange-500 hover:scale-105 ${
-                isActive('/team') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
+                isActive('/covid-pandemic') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
               }`}
             >
-              Team
+              Covid Pandemic
             </Link>
+            
+            {/* Team Dropdown */}
+            <div className="relative">
+              <button
+                onMouseEnter={() => setIsTeamDropdownOpen(true)}
+                onMouseLeave={() => setIsTeamDropdownOpen(false)}
+                className={`font-medium transition-all duration-300 hover:text-orange-500 hover:scale-105 flex items-center space-x-1 ${
+                  isActive('/team') || isActive('/trusty') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
+                }`}
+              >
+                <span>Team</span>
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isTeamDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Team Dropdown Menu */}
+              <div 
+                className={`absolute top-full left-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-orange-100 py-2 transition-all duration-200 ${
+                  isTeamDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                }`}
+                onMouseEnter={() => setIsTeamDropdownOpen(true)}
+                onMouseLeave={() => setIsTeamDropdownOpen(false)}
+              >
+                <Link 
+                  to="/team" 
+                  onClick={closeTeamDropdown}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isActive('/team') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                  }`}
+                >
+                  Our Team
+                </Link>
+                <Link 
+                  to="/trusty" 
+                  onClick={closeTeamDropdown}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isActive('/trusty') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                  }`}
+                >
+                  Trusty
+                </Link>
+              </div>
+            </div>
             <Link 
               to="/contact" 
               className={`font-medium transition-all duration-300 hover:text-orange-500 hover:scale-105 ${
@@ -245,6 +292,17 @@ const Header = () => {
               Media & Updates
             </Link>
             <Link 
+              to="/covid-pandemic" 
+              onClick={closeMobileMenu}
+              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+                isActive('/covid-pandemic') 
+                  ? 'text-orange-500 bg-orange-50' 
+                  : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+              }`}
+            >
+              Covid Pandemic
+            </Link>
+            <Link 
               to="/team" 
               onClick={closeMobileMenu}
               className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
@@ -253,7 +311,18 @@ const Header = () => {
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Team
+              Our Team
+            </Link>
+            <Link 
+              to="/trusty" 
+              onClick={closeMobileMenu}
+              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+                isActive('/trusty') 
+                  ? 'text-orange-500 bg-orange-50' 
+                  : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+              }`}
+            >
+              Trusty
             </Link>
             <Link 
               to="/contact" 
