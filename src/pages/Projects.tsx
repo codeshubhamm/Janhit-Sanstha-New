@@ -7,11 +7,12 @@ const Projects = () => {
   const projects = [
     {
       id: "kishori-vikas",
-      title: "Kishori Vikas Project",
-      description: "This initiative empowers 250 adolescent girls through structured programs focused on education and life skills, workshops on health, hygiene, and self-defense, leadership development and decision-making skills, and career guidance and mentorship.",
-      detailedDescription: "Under the 'NIRMITI… A Gang of Girls' program launched from July 1, 2024, adolescent girls from tribal and rural areas receive training in education, health, personality development, career guidance, counseling, menstrual hygiene, self-defense, and leadership. The project started in six villages and currently supports 250 adolescent girls.",
+      title: "Nirmiti",
+      subtitle: "The Gang of Girls",
+      description: "This initiative empowers 250+ adolescent girls through structured programs focused on education and life skills, workshops on health, hygiene, and self-defense, leadership development and decision-making skills, and career guidance and mentorship.",
+      detailedDescription: "Under the 'NIRMITI… A Gang of Girls' program launched from July 1, 2024, adolescent girls from tribal and rural areas receive training in education, health, personality development, career guidance, counseling, menstrual hygiene, self-defense, and leadership. The project started in six villages and currently supports 250+ adolescent girls.",
       image: "/Kishor Vikas Img.jpg",
-      beneficiaries: "250 Girls",
+      beneficiaries: "250+ Girls",
       status: "Active",
       category: "Women Empowerment",
       highlights: ["Education & Life Skills", "Health & Hygiene Workshops", "Leadership Development", "Career Guidance"]
@@ -20,9 +21,9 @@ const Projects = () => {
       id: "jadui-gullak",
       title: "Jadui Gullak - Financial Literacy",
       description: "A financial literacy program designed for children, teaching them savings habits, budget management, and financial decision-making skills.",
-      detailedDescription: "Launched from January 1, 2024, this program provides guidance on financial literacy to students. Nationalized banking accounts are opened for children, spreading awareness about savings, proper use of money, and financial management. So far, 30 students have opened 'Jadui Gullak' accounts with a target of reaching 385 students.",
+      detailedDescription: "Launched on January 1, 2025, this program provides guidance on financial literacy to students. Nationalized banking accounts are opened for children, spreading awareness about savings, proper use of money, and financial management. After the Jadui Gullak arrived, kids started spending less on outside snacks like chips and began saving their money. Each time they dropped a coin in, a sweet voice said, 'Well done! You saved money!' Slowly, saving became a habit. The Jadui Gullak didn't just hold money — it taught them the value of money.",
       image: "/Jadui Gulak Img.jpg",
-      beneficiaries: "385 Students (Target)",
+      beneficiaries: "68+ Students",
       status: "Active",
       category: "Financial Education",
       highlights: ["Savings Habits", "Budget Management", "Banking Accounts", "Financial Planning"]
@@ -31,20 +32,21 @@ const Projects = () => {
       id: "digital-saksharta",
       title: "Digital Saksharta Program",
       description: "A basic digital literacy program introducing students and villagers from 5 villages to essential digital tools, online transactions, and cybersecurity awareness.",
-      detailedDescription: "Started from August 15, 2023, this program has trained more than 150 students from five villages. The program covers basic computer literacy and digital skills essential for modern life, bridging the digital divide in rural communities.",
+      detailedDescription: "Started from August 15, 2023, this program has trained more than 180 students from five villages. The program covers basic computer literacy and digital skills essential for modern life, bridging the digital divide in rural communities.",
       image: "/Digital Saksharta Img.jpg",
-      beneficiaries: "150+ Students",
+      beneficiaries: "180+ Students",
       status: "Active",
       category: "Digital Education",
       highlights: ["Computer Training", "Digital Tools", "Online Safety", "Digital Skills"]
     },
     {
       id: "pankh-sapno-ki-udaan",
-      title: "Pankh Sapno Ki Udaan",
-      description: "Education initiative serving 450 students from grades 1-5 across 16 villages with trained local women educators.",
-      detailedDescription: "Operating since April 1, 2023, this project operates in 16 villages around the Tipeshwar Wildlife Sanctuary. Trained women educators appointed on honorarium basis in each village conduct daily 2-hour learning sessions for children, helping improve their academic performance and building strong connections with parents.",
+      title: "Pankh",
+      subtitle: "Sapno Ki Udaan",
+      description: "Education initiative serving 315+ students from grades 1-5 across 15 villages with trained local women educators.",
+      detailedDescription: "Operating since April 1, 2023, this project operates in 15 villages around the Tipeshwar Wildlife Sanctuary. Trained women educators appointed on honorarium basis in each village conduct daily 2-hour learning sessions for children, helping improve their academic performance and building strong connections with parents. Janhit provides educational materials and drawing supplies, which are used to conduct Anand Sabha sessions.",
       image: "/Pankh Img 1.jpg",
-      beneficiaries: "450 Students",
+      beneficiaries: "315+ Students",
       status: "Active",
       category: "Education",
       highlights: ["Early Childhood Education", "Women Educators", "Academic Performance", "Parent Engagement"]
@@ -53,9 +55,9 @@ const Projects = () => {
       id: "nisarg-mitra-manch",
       title: "Nisarg Mitra Manch",
       description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
-      detailedDescription: "This initiative focuses on environmental awareness through tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, environmental protection activities, and has over 80 active youth members.",
+      detailedDescription: "This initiative focuses on environmental awareness through tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, environmental protection activities, and has over 40 active youth members.",
       image: "/Nisarg Mitr Manch .jpg",
-      beneficiaries: "80+ Youth Members",
+      beneficiaries: "40+ Youth Members",
       status: "Active",
       category: "Environment",
       highlights: ["Tree Plantation", "Waste Management", "Environmental Education", "Youth Engagement"]
@@ -64,9 +66,9 @@ const Projects = () => {
       id: "advanced-digital-literacy",
       title: "Advanced Digital Literacy Programme",
       description: "Advanced training in Coding, Tally, Web Development, Web Design, Cyber Security and other computer-related skills for rural students.",
-      detailedDescription: "The organization is trying to create employment-oriented skilled youth in backward areas. Through this project, more than 90 students have been empowered and guided for future employment or entrepreneurship. This initiative is supported by Grand Maratha Foundation.",
+      detailedDescription: "The organization is trying to create employment-oriented skilled youth in backward areas. Through this project, more than 75 students have been empowered and guided for future employment or entrepreneurship. This initiative is supported by Grand Maratha Foundation.",
       image: "/Digital Saksharta Img.jpg",
-      beneficiaries: "90+ Students",
+      beneficiaries: "75+ Students",
       status: "Active",
       category: "Advanced Technology",
       highlights: ["Coding Training", "Web Development", "Cyber Security", "Employment Skills"]
@@ -74,6 +76,7 @@ const Projects = () => {
     {
       id: "jan-setu",
       title: "Jan-Setu Program",
+      subtitle: "Learn And Earn",
       description: "Helps rural people access government schemes, benefits, and services around the Tipeshwar Sanctuary area.",
       detailedDescription: "It facilitates the submission of government forms, information access, and application assistance at the local level. The project aims to spread awareness about government schemes and provide assistance with form filling and documentation, especially for marginalized communities. The program started on April 1, 2025.",
       image: "https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -131,10 +134,14 @@ const Projects = () => {
                 
                 <div className={`space-y-8 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                   <div>
-                    <h2 className="text-4xl font-bold mb-6">
-                      <span className="text-gray-900">{project.title.split(' ').slice(0, -1).join(' ')} </span>
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">{project.title.split(' ').slice(-1)[0]}</span>
+                    <h2 className="text-4xl font-bold mb-3">
+                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">{project.title}</span>
                     </h2>
+                    {project.subtitle && (
+                      <h3 className="text-2xl font-semibold text-gray-700 mb-6">
+                        {project.subtitle}
+                      </h3>
+                    )}
                     <p className="text-xl text-gray-600 leading-relaxed mb-6">
                       {project.description}
                     </p>

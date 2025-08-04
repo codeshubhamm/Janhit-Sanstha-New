@@ -1,43 +1,58 @@
 import React from 'react';
-import { TrendingUp, Users, BookOpen, Heart, Award, Target } from 'lucide-react';
+import { TrendingUp, Users, BookOpen, Heart, Award, Target, Monitor } from 'lucide-react';
 
 const StatsSection = () => {
   const stats = [
     {
       number: "250+",
-      label: "Students Educated",
-      description: "Through Kishori Vikas Project",
+      label: "Students Education",
+      projectName: "Nirmiti",
+      highlightedText: "The Gang of Girls",
+      description: "(Adolescent Girls Holistic Development)",
       icon: BookOpen,
       color: "text-blue-600",
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200"
     },
     {
-      number: "450",
-      label: "Students in Education",
-      description: "Through Pankh Sapno Ki Udaan program",
+      number: "315+",
+      label: "Students in Primary Education",
+      projectName: "Pankh",
+      description: "Sapno Ki Udaan program",
       icon: Heart,
       color: "text-pink-600",
       bgColor: "bg-pink-50",
       borderColor: "border-pink-200"
     },
     {
-      number: "150+",
+      number: "180+",
       label: "Digital Learners",
-      description: "Villagers trained in Digital Saksharta",
+      projectName: "Foundational Digital Literacy",
+      description: "Program In Rural Areas",
       icon: TrendingUp,
       color: "text-green-600",
       bgColor: "bg-green-50",
       borderColor: "border-green-200"
     },
     {
-      number: "385",
+      number: "68+",
       label: "Financial Literacy",
-      description: "Target for Jadui Gullak program",
+      projectName: "Jadui Gullak",
+      description: "In Rural Areas",
       icon: Users,
       color: "text-orange-600",
       bgColor: "bg-orange-50",
       borderColor: "border-orange-200"
+    },
+    {
+      number: "75+",
+      label: "Advanced Digital Literacy Learners",
+      projectName: "Digital Literacy",
+      description: "Program",
+      icon: Monitor,
+      color: "text-purple-600",
+      bgColor: "bg-purple-50",
+      borderColor: "border-purple-200"
     }
   ];
 
@@ -50,7 +65,7 @@ const StatsSection = () => {
             Our Impact in Numbers
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Transforming Lives Across <span className="text-orange-600">Maharashtra</span>
+            Transforming Lives
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
             For more than two decades, Janhit has consistently delivered impactful programs, 
@@ -58,7 +73,7 @@ const StatsSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
           {stats.map((stat, index) => (
             <div key={index} className={`${stat.bgColor} ${stat.borderColor} border-2 rounded-2xl p-6 lg:p-8 text-center hover:shadow-lg transition-all duration-300 group hover:-translate-y-1`}>
               <div className={`w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 ${stat.bgColor} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md`}>
@@ -70,6 +85,14 @@ const StatsSection = () => {
               <div className="text-base sm:text-lg font-semibold text-gray-800 mb-1 sm:mb-2">
                 {stat.label}
               </div>
+              <div className={`text-lg sm:text-xl font-bold ${stat.color} mb-2`}>
+                {stat.projectName}
+              </div>
+              {stat.highlightedText && (
+                <div className={`text-sm font-semibold ${stat.color} mb-1`}>
+                  {stat.highlightedText}
+                </div>
+              )}
               <div className="text-xs sm:text-sm text-gray-600">
                 {stat.description}
               </div>

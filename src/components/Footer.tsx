@@ -11,11 +11,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 sm:space-x-3 mb-6">
-              <img 
-                src="/Janhit Main Logo.png" 
-                alt="Janhit Sanstha Logo" 
-                className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
-              />
+              <div className="relative">
+                <img 
+                  src="/Janhit Main Logo.png" 
+                  alt="Janhit Sanstha Logo" 
+                  className="h-14 w-14 sm:h-18 sm:w-18 object-contain drop-shadow-lg"
+                />
+              </div>
               <div>
                 <span className="text-xl sm:text-2xl font-bold text-gray-900">Janhit Sanstha</span>
                 <p className="text-xs text-gray-600 -mt-1 hidden sm:block">Bahuuddeshiya Gramin Vikas</p>

@@ -99,7 +99,10 @@ const Contact = () => {
                 <div className="bg-orange-500 p-3 rounded-xl shadow-lg mr-4">
                   <MessageCircle className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">Send us a Message</h2>
+                <div>
+                  <h2 className="text-2xl font-bold text-gray-900">Message Us</h2>
+                  <p className="text-orange-600 font-medium">Always Happy To Hear From You</p>
+                </div>
               </div>
 
               <form className="space-y-6">
@@ -142,7 +145,10 @@ const Contact = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Subject</label>
-                  <select className="w-full px-4 py-3 border border-orange-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors">
+                  <select 
+                    className="w-full px-4 py-3 border border-orange-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors"
+                    aria-label="Select message subject"
+                  >
                     <option>General Inquiry</option>
                     <option>Volunteer Opportunity</option>
                     <option>Donation Information</option>

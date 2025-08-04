@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Heart, Menu, Search, Facebook, Instagram, Youtube, MessageCircle, X } from 'lucide-react';
+import { Heart, Menu, Search, Facebook, Instagram, Youtube, MessageCircle, X, ChevronDown } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -19,17 +20,27 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const toggleAboutDropdown = () => {
+    setIsAboutDropdownOpen(!isAboutDropdownOpen);
+  };
+
+  const closeAboutDropdown = () => {
+    setIsAboutDropdownOpen(false);
+  };
+
   return (
     <header className="bg-white shadow-lg border-b-2 border-orange-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center" onClick={closeMobileMenu}>
             <div className="flex items-center space-x-2 sm:space-x-3">
-              <img 
-                src="/Janhit Main Logo.png" 
-                alt="Janhit Sanstha Logo" 
-                className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
-              />
+              <div className="relative">
+                <img 
+                  src="/Janhit Main Logo.png" 
+                  alt="Janhit Sanstha Logo" 
+                  className="h-14 w-14 sm:h-18 sm:w-18 lg:h-24 lg:w-24 object-contain drop-shadow-lg"
+                />
+              </div>
               <div>
                 <span className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900">Janhit Sanstha</span>
                 <p className="text-xs text-gray-600 -mt-1 hidden sm:block">Bahuuddeshiya Gramin Vikas</p>
@@ -47,22 +58,58 @@ const Header = () => {
             >
               Home
             </Link>
+            
+            {/* About Dropdown */}
+            <div className="relative">
+              <button
+                onMouseEnter={() => setIsAboutDropdownOpen(true)}
+                onMouseLeave={() => setIsAboutDropdownOpen(false)}
+                className={`font-medium transition-all duration-300 hover:text-orange-500 hover:scale-105 flex items-center space-x-1 ${
+                  isActive('/about') || isActive('/projects') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
+                }`}
+              >
+                <span>About</span>
+                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isAboutDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              <div 
+                className={`absolute top-full left-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-orange-100 py-2 transition-all duration-200 ${
+                  isAboutDropdownOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                }`}
+                onMouseEnter={() => setIsAboutDropdownOpen(true)}
+                onMouseLeave={() => setIsAboutDropdownOpen(false)}
+              >
+                <Link 
+                  to="/about" 
+                  onClick={closeAboutDropdown}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isActive('/about') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                  }`}
+                >
+                  About Us
+                </Link>
+                <Link 
+                  to="/projects" 
+                  onClick={closeAboutDropdown}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isActive('/projects') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                  }`}
+                >
+                  Our Projects
+                </Link>
+              </div>
+            </div>
+            
             <Link 
-              to="/about" 
+              to="/media" 
               className={`font-medium transition-all duration-300 hover:text-orange-500 hover:scale-105 ${
-                isActive('/about') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
+                isActive('/media') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
               }`}
             >
-              About
+              Media & Updates
             </Link>
-            <Link 
-              to="/projects" 
-              className={`font-medium transition-all duration-300 hover:text-orange-500 hover:scale-105 ${
-                isActive('/projects') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
-              }`}
-            >
-              Our Projects
-            </Link>
+            
             <Link 
               to="/team" 
               className={`font-medium transition-all duration-300 hover:text-orange-500 hover:scale-105 ${
@@ -173,7 +220,7 @@ const Header = () => {
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              About
+              About Us
             </Link>
             <Link 
               to="/projects" 
@@ -185,6 +232,17 @@ const Header = () => {
               }`}
             >
               Our Projects
+            </Link>
+            <Link 
+              to="/media" 
+              onClick={closeMobileMenu}
+              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+                isActive('/media') 
+                  ? 'text-orange-500 bg-orange-50' 
+                  : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+              }`}
+            >
+              Media & Updates
             </Link>
             <Link 
               to="/team" 

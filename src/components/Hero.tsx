@@ -19,7 +19,7 @@ const Hero = () => {
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-lg">
                 Founded in 1998, Janhit Bahuuddeshiya Gramin Vikas Sanstha has been actively working 
                 in 20 tribal villages surrounding the Tipeshwar Wildlife Sanctuary, focusing on 
-                adolescent development, digital education, women empowerment, and environmental conservation.
+                Adolescent Development, Digital Education, Primary Education, Women Empowerment, and Environmental Conservation.
               </p>
             </div>
             

@@ -8,9 +8,12 @@ const VideoSection = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             जनहित बहुउद्देशीय ग्रामीण विकास संस्था, तेलंगटाकळी
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-4">
             Experience the impact of our work in rural communities through this video showcase
           </p>
+          <div className="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">
+            📅 Video Published: 23 Nov 2023
+          </div>
         </div>
         
         <div className="relative max-w-5xl mx-auto">

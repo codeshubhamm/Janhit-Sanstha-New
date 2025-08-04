@@ -17,8 +17,8 @@ const ProjectDetail = () => {
 
   const projectsData = {
     "kishori-vikas": {
-      title: "Kishori Vikas Project",
-      subtitle: "NIRMITI… A Gang of Girls",
+      title: "Nirmiti",
+      subtitle: "The Gang of Girls",
       description: "This initiative empowers 250 adolescent girls through education, skill development, and awareness programs to enhance their confidence and decision-making abilities.",
       fullDescription: "Under the 'NIRMITI… A Gang of Girls' program launched from July 1, 2024, adolescent girls from tribal and rural areas receive comprehensive training in education, health, personality development, career guidance, counseling, menstrual hygiene, self-defense, and leadership. The project started in six villages and currently supports 250 adolescent girls. The organization plans to expand this project to the remaining 14 villages.",
       image: "/Kishor Vikas Img.jpg",
@@ -55,10 +55,10 @@ const ProjectDetail = () => {
       title: "Jadui Gullak",
       subtitle: "Financial Literacy Program",
       description: "A financial literacy program designed for children, teaching them savings habits, budget management, and financial decision-making skills.",
-      fullDescription: "Launched from January 1, 2024, this innovative program provides guidance on financial literacy to students. The program includes opening nationalized banking accounts for children and spreading awareness about savings, proper use of money, and financial management. So far, 30 students have opened 'Jadui Gullak' accounts. The organization's goal is to reach 385 students through this program.",
+      fullDescription: "Launched on January 1, 2025, this innovative program provides guidance on financial literacy to students. The program includes opening nationalized banking accounts for children and spreading awareness about savings, proper use of money, and financial management. After the Jadui Gullak arrived, kids started spending less on outside snacks like chips and began saving their money. Each time they dropped a coin in, a sweet voice said, 'Well done! You saved money!' Slowly, saving became a habit. The Jadui Gullak didn't just hold money — it taught them the value of money.",
       image: "/Jadui Gulak Img.jpg",
-      beneficiaries: "385 Students (Target)",
-      startDate: "January 1, 2024",
+      beneficiaries: "68+ Students",
+      startDate: "January 1, 2025",
       location: "Sunna Village and surrounding areas",
       status: "Active",
       category: "Financial Education",
@@ -79,11 +79,12 @@ const ProjectDetail = () => {
         "Financial planning guidance"
       ],
       impact: [
-        "250-300 students informed about financial literacy",
-        "30 students have opened 'Jadui Gullak' accounts",
-        "Increased awareness about savings importance",
-        "Development of responsible financial behavior",
-        "Enhanced understanding of banking systems"
+        "68+ students have opened 'Jadui Gullak' accounts",
+        "Kids started spending less on outside snacks like chips",
+        "Development of saving habits among children",
+        "Increased awareness about the value of money",
+        "Enhanced understanding of banking systems",
+        "Positive reinforcement through voice feedback"
       ]
     },
     "digital-saksharta": {
@@ -122,14 +123,14 @@ const ProjectDetail = () => {
       ]
     },
     "pankh-sapno-ki-udaan": {
-      title: "Pankh Sapno Ki Udaan",
-      subtitle: "Educational Excellence Initiative",
-      description: "Educational initiative serving 450 students from grades 1-5 across 16 villages with trained local women educators.",
-      fullDescription: "Operating since April 1, 2023, this project operates in 16 villages around the Tipeshwar Wildlife Sanctuary. Trained women educators appointed on honorarium basis in each village conduct daily 2-hour learning sessions for children, helping improve their academic performance and building strong connections with parents. The project has successfully built a strong connection with the parents of 450 students, fostering a community-driven approach to education.",
+      title: "Pankh",
+      subtitle: "Sapno Ki Udaan",
+      description: "Educational initiative serving 315+ students from grades 1-5 across 15 villages with trained local women educators.",
+      fullDescription: "Operating since April 1, 2023, this project operates in 15 villages around the Tipeshwar Wildlife Sanctuary. Trained women educators appointed on honorarium basis in each village conduct daily 2-hour learning sessions for children, helping improve their academic performance and building strong connections with parents. Janhit provides educational materials and drawing supplies, which are used to conduct Anand Sabha sessions. The project has successfully built a strong connection with the parents of 315+ students, fostering a community-driven approach to education.",
       image: "/Pankh Img 1.jpg",
-      beneficiaries: "450 Students",
+      beneficiaries: "315+ Students",
       startDate: "April 1, 2023",
-      location: "16 Villages around Tipeshwar Wildlife Sanctuary",
+      location: "15 Villages around Tipeshwar Wildlife Sanctuary",
       status: "Active",
       category: "Education",
       objectives: [
@@ -160,9 +161,9 @@ const ProjectDetail = () => {
       title: "Nisarg Mitra Manch",
       subtitle: "Environmental Conservation Platform",
       description: "A platform for environmental conservation activities, including afforestation drives, biodiversity awareness, and sustainable livelihood practices.",
-      fullDescription: "This initiative focuses on environmental awareness through comprehensive programs including tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, alternatives to plastic, environmental protection slogans, drawing competitions, street plays, and rallies. Currently, the forum has over 80 active youth members committed to environmental protection.",
+      fullDescription: "This initiative focuses on environmental awareness through comprehensive programs including tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, alternatives to plastic, environmental protection slogans, drawing competitions, street plays, and rallies. Currently, the forum has over 40 active youth members committed to environmental protection.",
       image: "/Nisarg Mitr Manch .jpg",
-      beneficiaries: "80+ Youth Members",
+      beneficiaries: "40+ Youth Members",
       startDate: "Ongoing",
       location: "Multiple Villages",
       status: "Active",
@@ -185,7 +186,7 @@ const ProjectDetail = () => {
         "Eco-friendly awareness programs"
       ],
       impact: [
-        "80+ active youth members engaged",
+        "40+ active youth members engaged",
         "Multiple tree plantation drives conducted",
         "Increased environmental awareness in communities",
         "Reduced plastic usage in target areas",
@@ -229,7 +230,7 @@ const ProjectDetail = () => {
     },
     "jan-setu": {
       title: "Jan-Setu Program",
-      subtitle: "Government Services Bridge",
+      subtitle: "Learn And Earn",
       description: "The Jan-Setu program helps rural people in the areas surrounding the Tipeshwar Sanctuary to access government schemes, benefits, and services.",
       fullDescription: "The Jan-Setu program helps rural people in the areas surrounding the Tipeshwar Sanctuary to access government schemes, benefits, and services. It facilitates the submission of government forms, information access, and application assistance at the local level. The project aims to spread awareness about government schemes and provide assistance with form filling and documentation, especially for marginalized communities. The program started on April 1, 2025.",
       image: "https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=800",
