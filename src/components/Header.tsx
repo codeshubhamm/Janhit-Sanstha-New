@@ -70,7 +70,7 @@ const Header = () => {
                 onMouseEnter={() => setIsAboutDropdownOpen(true)}
                 onMouseLeave={() => setIsAboutDropdownOpen(false)}
                 className={`font-medium transition-all duration-300 hover:text-orange-500 hover:scale-105 flex items-center space-x-1 ${
-                  isActive('/about') || isActive('/projects') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
+                  isActive('/about') || isActive('/projects') || isActive('/awards') ? 'text-orange-500 border-b-2 border-orange-500 pb-1' : 'text-gray-700'
                 }`}
               >
                 <span>About</span>
@@ -102,6 +102,15 @@ const Header = () => {
                   }`}
                 >
                   Our Projects
+                </Link>
+                <Link 
+                  to="/awards" 
+                  onClick={closeAboutDropdown}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isActive('/awards') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                  }`}
+                >
+                  Awards
                 </Link>
               </div>
             </div>
@@ -279,6 +288,17 @@ const Header = () => {
               }`}
             >
               Our Projects
+            </Link>
+            <Link 
+              to="/awards" 
+              onClick={closeMobileMenu}
+              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+                isActive('/awards') 
+                  ? 'text-orange-500 bg-orange-50' 
+                  : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+              }`}
+            >
+              Awards
             </Link>
             <Link 
               to="/media" 
