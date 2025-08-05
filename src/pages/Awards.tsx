@@ -1,57 +1,10 @@
-import React from 'react';
-import { Trophy, Award, Star, Medal } from 'lucide-react';
+import React, { useState } from 'react';
+import { X } from 'lucide-react';
 
 const Awards = () => {
-  const awards = [
-    {
-      icon: Trophy,
-      title: "Excellence in Rural Development",
-      year: "2024",
-      organization: "Ministry of Rural Development",
-      description: "Recognized for outstanding contribution to rural community development and sustainable initiatives.",
-      category: "Government Recognition"
-    },
-    {
-      icon: Award,
-      title: "Best NGO for Women Empowerment",
-      year: "2023",
-      organization: "Maharashtra State Women Commission",
-      description: "Awarded for exceptional work in empowering rural women through education and skill development programs.",
-      category: "Women Empowerment"
-    },
-    {
-      icon: Star,
-      title: "Digital Literacy Champion",
-      year: "2023",
-      organization: "Digital India Initiative",
-      description: "Recognized for bridging the digital divide in rural areas through innovative education programs.",
-      category: "Digital Innovation"
-    },
-    {
-      icon: Medal,
-      title: "Community Service Excellence",
-      year: "2022",
-      organization: "District Administration",
-      description: "Honored for dedicated service to tribal communities and commitment to social development.",
-      category: "Community Service"
-    },
-    {
-      icon: Trophy,
-      title: "Education Innovation Award",
-      year: "2022",
-      organization: "State Education Department",
-      description: "Awarded for innovative approaches in primary education and adolescent development programs.",
-      category: "Education"
-    },
-    {
-      icon: Award,
-      title: "Environmental Conservation",
-      year: "2021",
-      organization: "Forest Department",
-      description: "Recognized for environmental awareness programs and conservation efforts in tribal areas.",
-      category: "Environment"
-    }
-  ];
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+
 
   const achievements = [
     {
@@ -76,6 +29,35 @@ const Awards = () => {
     }
   ];
 
+  // Actual Awards images from the Awards Janhit folder
+  const awardImages = [
+    "/Awards Janhit/1000003310.jpg",
+    "/Awards Janhit/1000003311.jpg",
+    "/Awards Janhit/1000003312.jpg",
+    "/Awards Janhit/1000003317.jpg",
+    "/Awards Janhit/1000003318.jpg",
+    "/Awards Janhit/1000003319.jpg",
+    "/Awards Janhit/1000003320.jpg",
+    "/Awards Janhit/1000003322.jpg",
+    "/Awards Janhit/1000003325.jpg",
+    "/Awards Janhit/1000005903.jpg",
+    "/Awards Janhit/1000005904.jpg",
+    "/Awards Janhit/1000009621.jpg",
+    "/Awards Janhit/1000009622.jpg",
+    "/Awards Janhit/1000009623.jpg",
+    "/Awards Janhit/1000009624.jpg",
+    "/Awards Janhit/1000009625.jpg",
+    "/Awards Janhit/1000009626.jpg"
+  ];
+
+  const openModal = (image: string) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -94,40 +76,45 @@ const Awards = () => {
         </div>
       </section>
 
-      {/* Awards Grid */}
-      <section className="py-20">
+      {/* Awards Gallery Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Awards & Recognition</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Award Collection</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These accolades reflect our dedication to creating positive change in rural communities.
+              Browse through our collection of awards, certificates, and recognitions received over the years.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {awards.map((award, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-3 rounded-xl">
-                    <award.icon className="h-6 w-6 text-white" />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {awardImages.map((image, index) => (
+              <div 
+                key={index} 
+                className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 cursor-pointer"
+                onClick={() => openModal(image)}
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={image}
+                    alt={`Award ${index + 1}`}
+                    className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="bg-white/90 rounded-full p-3">
+                      <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                      </svg>
+                    </div>
                   </div>
-                  <span className="text-sm font-semibold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                    {award.year}
-                  </span>
-                </div>
-                
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{award.title}</h3>
-                <p className="text-orange-600 font-semibold mb-3">{award.organization}</p>
-                <p className="text-gray-600 mb-4">{award.description}</p>
-                
-                <div className="inline-block bg-orange-50 text-orange-700 px-3 py-1 rounded-full text-sm font-medium">
-                  {award.category}
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+
 
       {/* Achievements Section */}
       <section className="py-20 bg-gray-50">
@@ -196,6 +183,27 @@ const Awards = () => {
           </div>
         </div>
       </section>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={closeModal}>
+          <div className="relative max-w-5xl max-h-full">
+            <button
+              onClick={closeModal}
+              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors duration-200 z-10"
+              aria-label="Close modal"
+            >
+              <X className="w-8 h-8" />
+            </button>
+            <img
+              src={selectedImage}
+              alt="Award"
+              className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
