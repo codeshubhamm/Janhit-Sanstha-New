@@ -10,7 +10,7 @@ const CausesSection = () => {
       percentage: 50
     },
     {
-      image: "/Pankh Img 1.jpg",
+      image: "/Pankh Replace.jpg",
       title: "Supporting Healthy School Food Programs",
       raised: "$3,200",
       goal: "$4,000",

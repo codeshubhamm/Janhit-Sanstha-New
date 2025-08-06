@@ -251,148 +251,148 @@ const Header = () => {
         {/* Mobile Navigation Menu */}
         <div className={`lg:hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen 
-            ? 'max-h-96 opacity-100 pb-6' 
+            ? 'max-h-screen opacity-100 pb-6' 
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}>
-          <nav className="flex flex-col space-y-4 pt-4 border-t border-orange-100">
+          <nav className="flex flex-col space-y-2 pt-4 border-t border-orange-100">
             <Link 
               to="/" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Home
+              🏠 Home
             </Link>
             <Link 
               to="/about" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/about') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              About Us
+              ℹ️ About Us
             </Link>
             <Link 
               to="/projects" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/projects') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Our Projects
+              🚀 Our Projects
             </Link>
             <Link 
               to="/awards" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/awards') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Awards
+              🏆 Awards
             </Link>
             <Link 
               to="/media" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/media') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Media & Updates
+              📰 Media & Updates
             </Link>
             <Link 
               to="/covid-pandemic" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/covid-pandemic') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Covid Pandemic
+              🦠 Covid Pandemic
             </Link>
             <Link 
               to="/team" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/team') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Our Team
+              👥 Our Team
             </Link>
             <Link 
               to="/trusty" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/trusty') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Trustee
+              🤝 Trustee
             </Link>
             <Link 
               to="/contact" 
               onClick={closeMobileMenu}
-              className={`font-medium py-2 px-4 rounded-lg transition-all duration-300 ${
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
                 isActive('/contact') 
-                  ? 'text-orange-500 bg-orange-50' 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
                   : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
               }`}
             >
-              Contact
+              📞 Contact
             </Link>
             
-            {/* Mobile Additional Actions */}
-            <div className="flex items-center justify-between pt-4 border-t border-orange-100">
-              <div className="flex items-center space-x-4">
-                <span className="text-sm text-gray-600">Follow Us:</span>
-                <div className="flex items-center space-x-2">
-                  <a 
-                    href="https://www.facebook.com/share/1C7tpu6LGb/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
-                  >
-                    <Facebook className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
-                  </a>
-                  <a 
-                    href="https://www.instagram.com/janhitsanstha?igsh=MTgzOHEyYzR5Nmt4Zw==" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
-                  >
-                    <Instagram className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
-                  </a>
-                  <a 
-                    href="https://whatsapp.com/channel/0029VaftLs52f3ELNd1aqA0X" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
-                  >
-                    <MessageCircle className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
-                  </a>
-                  <a 
-                    href="https://youtube.com/@janhitsanstha?si=LYErzyRrKdp6j8Sm" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
-                  >
-                    <Youtube className="h-4 w-4 text-gray-500 hover:text-orange-500 transition-colors" />
-                  </a>
-                </div>
+            {/* Mobile Social Links */}
+            <div className="pt-6 border-t border-orange-100">
+              <div className="text-center mb-4">
+                <span className="text-sm font-medium text-gray-600">Follow Us</span>
+              </div>
+              <div className="flex items-center justify-center space-x-4">
+                <a 
+                  href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-blue-50 hover:bg-blue-100 transition-colors"
+                >
+                  <Facebook className="h-5 w-5 text-blue-600" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/janhitsanstha?igsh=MTgzOHEyYzR5Nmt4Zw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-pink-50 hover:bg-pink-100 transition-colors"
+                >
+                  <Instagram className="h-5 w-5 text-pink-600" />
+                </a>
+                <a 
+                  href="https://whatsapp.com/channel/0029VaftLs52f3ELNd1aqA0X" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-green-50 hover:bg-green-100 transition-colors"
+                >
+                  <MessageCircle className="h-5 w-5 text-green-600" />
+                </a>
+                <a 
+                  href="https://youtube.com/@janhitsanstha?si=LYErzyRrKdp6j8Sm" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-red-50 hover:bg-red-100 transition-colors"
+                >
+                  <Youtube className="h-5 w-5 text-red-600" />
+                </a>
               </div>
             </div>
           </nav>

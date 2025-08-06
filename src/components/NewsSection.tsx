@@ -12,7 +12,7 @@ const NewsSection = () => {
     {
       title: "The Role of Technology in Modern Charity Work",
       date: "Dec 10, 2024",
-      image: "/Pankh Img 1.jpg",
+      image: "/Pankh Replace.jpg",
       category: "Technology"
     },
     {

@@ -100,24 +100,7 @@ const StatsSection = () => {
           ))}
         </div>
         
-        <div className="text-center mt-8 sm:mt-12 lg:mt-16">
-          <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200 inline-block">
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
-              Ready to Amplify Our Impact?
-            </h3>
-            <p className="text-sm sm:text-base text-gray-600 mb-6">
-              Join us in reaching even more communities and creating lasting change.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 sm:px-8 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg">
-                Support Our Mission
-              </button>
-              <button className="border-2 border-gray-300 text-gray-700 px-6 sm:px-8 py-3 rounded-xl font-semibold hover:border-orange-500 hover:text-orange-600 transition-all duration-300">
-                View Reports
-              </button>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ const EventsSection = () => {
       date: "Dec 25",
       title: "Christmas Food Drive for Local Families",
       description: "Join us in spreading holiday joy by donating food items for families in need.",
-      image: "/Pankh Img 1.jpg"
+      image: "/Pankh Replace.jpg"
     },
     {
       date: "Jan 15",

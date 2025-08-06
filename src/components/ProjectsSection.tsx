@@ -35,7 +35,7 @@ const ProjectsSection = () => {
       title: "Pankh Sapno Ki Udaan",
       description: "Education initiative serving 450 students from grades 1-5 across 16 villages with trained local women educators.",
       detailedDescription: "This education-focused program provides daily learning sessions conducted by trained local women educators. It strengthens early childhood education, empowers women educators in rural areas, enhances academic performance, and integrates extracurricular activities and life skills.",
-      image: "/Pankh Img 1.jpg",
+      image: "/Pankh Replace.jpg",
       beneficiaries: "450 Students",
       status: "Active",
       category: "Education"
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
       title: "Nisarg Mitra Manch",
       description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
       detailedDescription: "Nisarg Mitra Manch encourages environmental conservation through afforestation drives, clean-up campaigns, biodiversity awareness sessions, and sustainable livelihood education. The platform promotes community participation in preserving natural resources around the Tipeshwar Wildlife Sanctuary.",
-      image: "/Nisarg Mitr Manch .jpg",
+      image: "/Nisarg Mitr manch.jpg",
       beneficiaries: "16 Villages",
       status: "Active",
       category: "Environment"

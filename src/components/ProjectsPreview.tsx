@@ -43,7 +43,7 @@ const ProjectsPreview = () => {
       subtitle: "Sapno Ki Udaan",
       description: "Educational initiative serving 315+ students from grades 1-5 across 15 villages with trained local women educators.",
       detailedDescription: "Operating since April 1, 2023, this project operates in 15 villages around the Tipeshwar Wildlife Sanctuary. Trained women educators appointed on honorarium basis in each village conduct daily 2-hour learning sessions for children, helping improve their academic performance and building strong connections with parents. Janhit provides educational materials and drawing supplies, which are used to conduct Anand Sabha sessions.",
-      image: "/Pankh Img 1.jpg",
+      image: "/Pankh Replace.jpg",
       beneficiaries: "315+ Students",
       status: "Active",
       category: "Education"
@@ -53,7 +53,7 @@ const ProjectsPreview = () => {
       title: "Nisarg Mitra Manch",
       description: "A platform for environmental conservation activities, including afforestation drives, biodiversity awareness, and sustainable livelihood practices.",
       detailedDescription: "This initiative focuses on environmental awareness through tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, environmental protection activities, and has over 40 active youth members.",
-      image: "/Nisarg Mitr Manch .jpg",
+      image: "/Nisarg Mitr manch.jpg",
       beneficiaries: "40+ Youth Members",
       status: "Active",
       category: "Environment"
@@ -63,7 +63,7 @@ const ProjectsPreview = () => {
       title: "Advanced Digital Literacy Programme",
       description: "In rural areas, students are given advanced training in Coding, Tally, Web Development, Web Design, Cyber Security and other computer-related skills.",
       detailedDescription: "The organization is trying to create employment-oriented skilled youth in backward areas. Through this project, more than 75 students have been empowered and guided for future employment or entrepreneurship. This initiative is supported by Grand Maratha Foundation.",
-      image: "/Digital Saksharta Img.jpg",
+      image: "/Digital Litracy Photo.jpg",
       beneficiaries: "75+ Students",
       status: "Active",
       category: "Advanced Technology"

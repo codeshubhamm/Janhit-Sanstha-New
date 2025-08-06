@@ -20,7 +20,7 @@ const DonationSection = () => {
             
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="/Pankh Img 1.jpg" 
+                src="/Pankh Replace.jpg" 
                 alt="Food distribution" 
                 className="w-full h-48 object-cover"
               />

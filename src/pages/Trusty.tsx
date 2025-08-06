@@ -17,7 +17,8 @@ const Trusty = () => {
             Our dedicated board of trustees ensures proper governance and strategic direction for all our initiatives.
           </p>
           
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+          {/* Desktop Table View */}
+          <div className="hidden lg:block bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead>
@@ -95,6 +96,117 @@ const Trusty = () => {
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          {/* Mobile Card View */}
+          <div className="lg:hidden space-y-4">
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">1</span>
+                <span className="text-orange-600 font-semibold text-sm">President</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Vivek Vasantrao Kalpande</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Business, Journalist</p>
+                <p><span className="font-medium">Education:</span> BA Graduate</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">2</span>
+                <span className="text-orange-600 font-semibold text-sm">Vice-President</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Anil Linganna Jakkawar</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Business</p>
+                <p><span className="font-medium">Education:</span> BA Graduate</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">3</span>
+                <span className="text-orange-600 font-semibold text-sm">Secretary</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Swapnil Ramkrushna Bomenwar</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Business</p>
+                <p><span className="font-medium">Education:</span> BA Graduate</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">4</span>
+                <span className="text-orange-600 font-semibold text-sm">Trustee</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Rajani Gangadhar Atram</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Social Worker</p>
+                <p><span className="font-medium">Education:</span> BA, BEd, MA Marathi & MA Sociology</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">5</span>
+                <span className="text-orange-600 font-semibold text-sm">Trustee</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Ashwini Savish Nainwar</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Advocate</p>
+                <p><span className="font-medium">Education:</span> BA, LLB, MA, Marathi</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">6</span>
+                <span className="text-orange-600 font-semibold text-sm">Trustee</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Pratik Santosh Singhaniya</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Business</p>
+                <p><span className="font-medium">Education:</span> B.Com - Jr Diploma in French Language</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">7</span>
+                <span className="text-orange-600 font-semibold text-sm">Trustee</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Ravindra Chandrabhan Bomenwar</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Social Worker</p>
+                <p><span className="font-medium">Education:</span> BA Graduate</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">8</span>
+                <span className="text-orange-600 font-semibold text-sm">Trustee</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Mahadev Narsing Mallelwar</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Farmer</p>
+                <p><span className="font-medium">Education:</span> HSC</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-4 hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center justify-between mb-3">
+                <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-semibold">9</span>
+                <span className="text-orange-600 font-semibold text-sm">Trustee</span>
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Sunita Bhaurao Apselwar</h3>
+              <div className="space-y-1 text-sm text-gray-600">
+                <p><span className="font-medium">Profession:</span> Gov. Employee</p>
+                <p><span className="font-medium">Education:</span> MA, Bed</p>
+              </div>
             </div>
           </div>
         </div>

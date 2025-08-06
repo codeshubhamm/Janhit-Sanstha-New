@@ -63,33 +63,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4 p-6 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors duration-300">
-                  <div className="bg-orange-500 p-3 rounded-xl shadow-lg">
-                    <Mail className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Addresses</h3>
-                    <p className="text-gray-600">
-                      General: jbgvsanstha@gmail.com<br />
-                      Programs: programs@janhitsanstha.org<br />
-                      Donations: donate@janhitsanstha.org
-                    </p>
-                  </div>
-                </div>
 
-                <div className="flex items-start space-x-4 p-6 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors duration-300">
-                  <div className="bg-orange-500 p-3 rounded-xl shadow-lg">
-                    <Clock className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Office Hours</h3>
-                    <p className="text-gray-600">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 9:00 AM - 2:00 PM<br />
-                      Sunday: Closed
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
 
