@@ -142,7 +142,7 @@ const About = () => {
               <div className="text-orange-100">Tribal Villages</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">
-              <div className="text-4xl font-bold text-white mb-2">100+</div>
+              <div className="text-4xl font-bold text-white mb-2">20+</div>
               <div className="text-orange-100">Villages Impacted</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl">

@@ -101,7 +101,7 @@ const CovidPandemic = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-              <div className="text-3xl font-bold text-red-600 mb-2">50+</div>
+              <div className="text-3xl font-bold text-red-600 mb-2">20+</div>
               <div className="text-lg font-semibold text-gray-900 mb-2">Villages Reached</div>
               <div className="text-sm text-gray-600">With awareness campaigns</div>
             </div>
