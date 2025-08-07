@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from 'lucide-react';
+import VolunteerForm from '../components/VolunteerForm';
 
 const Contact = () => {
+  const [isVolunteerFormOpen, setIsVolunteerFormOpen] = useState(false);
+  
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -183,7 +186,10 @@ const Contact = () => {
             Don't wait - start making a difference in rural Maharashtra today!
           </p>
           <div className="grid md:grid-cols-3 gap-6">
-            <button className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg">
+            <button 
+              onClick={() => setIsVolunteerFormOpen(true)}
+              className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg"
+            >
               Volunteer Now
             </button>
             <button className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg">
@@ -195,6 +201,12 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      
+      {/* Volunteer Form Modal */}
+      <VolunteerForm 
+        isOpen={isVolunteerFormOpen} 
+        onClose={() => setIsVolunteerFormOpen(false)} 
+      />
     </div>
   );
 };

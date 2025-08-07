@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { ArrowLeft, Users, Calendar, MapPin, Target, CheckCircle } from 'lucide-react';
+import VolunteerForm from '../components/VolunteerForm';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+  const [isVolunteerFormOpen, setIsVolunteerFormOpen] = useState(false);
 
   // Scroll to top when component mounts
   useEffect(() => {
@@ -262,6 +264,41 @@ const ProjectDetail = () => {
         "Better utilization of government benefits",
         "Strengthened government-citizen connection"
       ]
+    },
+    "be-the-change": {
+      title: "Be the Change",
+      subtitle: "Free Library Initiative",
+      description: "A collaborative project with Need Sanstha to create a free library in Pandharkawda for students, providing access to educational resources and study materials.",
+      fullDescription: "This initiative aims to bridge the educational gap by providing free access to books, study materials, and a conducive learning environment for students in Pandharkawda. The library serves as a hub for knowledge sharing, academic support, and community learning. Partnering with Need Sanstha, this project ensures that quality educational resources are accessible to all students regardless of their economic background. The library provides a quiet study space, access to textbooks, reference materials, and digital resources to support students in their academic journey.",
+      image: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800",
+      beneficiaries: "Students in Pandharkawda",
+      startDate: "January 2025",
+      location: "Pandharkawda, Maharashtra",
+      status: "Active",
+      category: "Education & Community",
+      objectives: [
+        "Provide free access to educational resources",
+        "Create a conducive learning environment",
+        "Support students' academic development",
+        "Bridge educational gaps in the community",
+        "Foster a culture of reading and learning"
+      ],
+      activities: [
+        "Library management and organization",
+        "Book collection and cataloging",
+        "Study space provision",
+        "Reading programs and workshops",
+        "Academic support sessions",
+        "Community outreach programs",
+        "Digital resource access"
+      ],
+      impact: [
+        "Increased access to educational materials",
+        "Improved study environment for students",
+        "Enhanced community learning opportunities",
+        "Strengthened partnership with Need Sanstha",
+        "Promoted literacy and education in Pandharkawda"
+      ]
     }
   };
 
@@ -434,7 +471,7 @@ const ProjectDetail = () => {
                   Join us as a volunteer and make a direct impact in rural communities.
                 </p>
                 <button 
-                  onClick={() => navigate('/contact')}
+                  onClick={() => setIsVolunteerFormOpen(true)}
                   className="w-full bg-orange-500 text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
                 >
                   Become a Volunteer
@@ -468,6 +505,12 @@ const ProjectDetail = () => {
           </div>
         </div>
       </section>
+      
+      {/* Volunteer Form Modal */}
+      <VolunteerForm 
+        isOpen={isVolunteerFormOpen} 
+        onClose={() => setIsVolunteerFormOpen(false)} 
+      />
     </div>
   );
 };

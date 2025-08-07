@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Users, Heart } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import VolunteerForm from './VolunteerForm';
 
 const GetInvolvedSection = () => {
   const navigate = useNavigate();
+  const [isVolunteerFormOpen, setIsVolunteerFormOpen] = useState(false);
 
   const ways = [
     {
@@ -58,7 +60,13 @@ const GetInvolvedSection = () => {
               </div>
               
               <button 
-                onClick={() => way.title === 'Donate' ? navigate('/donate') : null}
+                onClick={() => {
+                  if (way.title === 'Donate') {
+                    navigate('/donate');
+                  } else if (way.title === 'Volunteer') {
+                    setIsVolunteerFormOpen(true);
+                  }
+                }}
                 className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-xl text-base lg:text-lg font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 {way.action}
@@ -79,6 +87,12 @@ const GetInvolvedSection = () => {
           </button>
         </div>
       </div>
+      
+      {/* Volunteer Form Modal */}
+      <VolunteerForm 
+        isOpen={isVolunteerFormOpen} 
+        onClose={() => setIsVolunteerFormOpen(false)} 
+      />
     </section>
   );
 };

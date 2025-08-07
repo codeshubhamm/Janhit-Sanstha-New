@@ -78,6 +78,17 @@ const ProjectsPreview = () => {
       beneficiaries: "Rural Communities",
       status: "Upcoming",
       category: "Government Services"
+    },
+    {
+      id: "be-the-change",
+      title: "Be the Change",
+      subtitle: "Free Library Initiative",
+      description: "A collaborative project with Need Sanstha to create a free library in Pandharkawda for students, providing access to educational resources and study materials.",
+      detailedDescription: "This initiative aims to bridge the educational gap by providing free access to books, study materials, and a conducive learning environment for students in Pandharkawda. Partnering with Need Sanstha, this project ensures that quality educational resources are accessible to all students regardless of their economic background.",
+      image: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=600",
+      beneficiaries: "Students in Pandharkawda",
+      status: "Active",
+      category: "Education & Community"
     }
   ];
 

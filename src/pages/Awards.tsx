@@ -1,32 +1,15 @@
 import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import { X, RotateCcw } from 'lucide-react';
 
 const Awards = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-
+  const [rotation, setRotation] = useState<number>(0);
 
   const achievements = [
-    {
-      number: "25+",
-      label: "Years of Service",
-      description: "Dedicated to rural development"
-    },
-    {
-      number: "50+",
-      label: "Villages Served",
-      description: "Across Maharashtra"
-    },
-    {
-      number: "1000+",
-      label: "Families Impacted",
-      description: "Through various programs"
-    },
-    {
-      number: "15+",
-      label: "Awards Received",
-      description: "For excellence in service"
-    }
+    { number: "25+", label: "Years of Service", description: "Dedicated to rural development" },
+    { number: "20+", label: "Villages Served", description: "Across Maharashtra" },
+    { number: "1000+", label: "Families Impacted", description: "Through various programs" },
+    { number: "15+", label: "Awards Received", description: "For excellence in service" }
   ];
 
   // Actual Awards images from the Awards Janhit folder
@@ -52,10 +35,17 @@ const Awards = () => {
 
   const openModal = (image: string) => {
     setSelectedImage(image);
+    setRotation(0); // Reset rotation when opening a new image
   };
 
   const closeModal = () => {
     setSelectedImage(null);
+    setRotation(0);
+  };
+
+  const handleRotate = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setRotation((prev) => (prev + 90) % 360);
   };
 
   return (
@@ -195,10 +185,20 @@ const Awards = () => {
             >
               <X className="w-8 h-8" />
             </button>
+            <button
+              onClick={handleRotate}
+              className="absolute -top-12 left-0 text-white hover:text-gray-300 transition-colors duration-200 z-10 flex items-center gap-2 bg-black/40 px-3 py-2 rounded-full"
+              aria-label="Rotate image"
+              title="Rotate image"
+            >
+              <RotateCcw className="w-6 h-6" />
+              <span className="hidden sm:inline">Rotate</span>
+            </button>
             <img
               src={selectedImage}
               alt="Award"
               className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
+              style={{ transform: `rotate(${rotation}deg)`, transition: 'transform 0.3s' }}
               onClick={(e) => e.stopPropagation()}
             />
           </div>

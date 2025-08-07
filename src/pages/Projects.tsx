@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import VolunteerForm from '../components/VolunteerForm';
 
 const Projects = () => {
   const navigate = useNavigate();
+  const [isVolunteerFormOpen, setIsVolunteerFormOpen] = useState(false);
 
   const projects = [
     {
@@ -84,6 +86,18 @@ const Projects = () => {
       status: "Upcoming",
       category: "Government Services",
       highlights: ["Government Schemes", "Form Assistance", "Documentation Help", "Community Support"]
+    },
+    {
+      id: "be-the-change",
+      title: "Be the Change",
+      subtitle: "Free Library Initiative",
+      description: "A collaborative project with Need Sanstha to create a free library in Pandharkawda for students, providing access to educational resources and study materials.",
+      detailedDescription: "This initiative aims to bridge the educational gap by providing free access to books, study materials, and a conducive learning environment for students in Pandharkawda. The library serves as a hub for knowledge sharing, academic support, and community learning. Partnering with Need Sanstha, this project ensures that quality educational resources are accessible to all students regardless of their economic background.",
+      image: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=600",
+      beneficiaries: "Students in Pandharkawda",
+      status: "Active",
+      category: "Education & Community",
+      highlights: ["Free Access", "Educational Resources", "Study Environment", "Community Partnership"]
     }
   ];
 
@@ -191,12 +205,21 @@ const Projects = () => {
             >
               Support Our Projects
             </button>
-            <button className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold hover:bg-white hover:text-orange-600 transition-all duration-300">
+            <button 
+              onClick={() => setIsVolunteerFormOpen(true)}
+              className="border-2 border-white text-white px-10 py-4 rounded-xl font-bold hover:bg-white hover:text-orange-600 transition-all duration-300"
+            >
               Become a Volunteer
             </button>
           </div>
         </div>
       </section>
+      
+      {/* Volunteer Form Modal */}
+      <VolunteerForm 
+        isOpen={isVolunteerFormOpen} 
+        onClose={() => setIsVolunteerFormOpen(false)} 
+      />
     </div>
   );
 };
