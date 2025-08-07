@@ -77,7 +77,9 @@ const Footer = () => {
             <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base text-gray-600">
               <li><Link to="/projects/kishori-vikas" className="hover:text-orange-500 transition-colors">Kishori Vikas Project</Link></li>
               <li><Link to="/projects/jadui-gullak" className="hover:text-orange-500 transition-colors">Jadui Gullak</Link></li>
-              <li><Link to="/projects/digital-saksharta" className="hover:text-orange-500 transition-colors">Digital Saksharta</Link></li>
+              <li><Link to="/projects/digital-saksharta" className="hover:text-orange-500 transition-colors">Digital Literacy Program</Link></li>
+              <li><Link to="/projects/advanced-digital-literacy" className="hover:text-orange-500 transition-colors">Advanced Digital Literacy</Link></li>
+              <li><Link to="/projects/be-the-change" className="hover:text-orange-500 transition-colors">Be the Change</Link></li>
               <li><Link to="/projects/pankh-sapno-ki-udaan" className="hover:text-orange-500 transition-colors">Pankh Sapno Ki Udaan</Link></li>
               <li><Link to="/projects/nisarg-mitra-manch" className="hover:text-orange-500 transition-colors">Nisarg Mitra Manch</Link></li>
             </ul>

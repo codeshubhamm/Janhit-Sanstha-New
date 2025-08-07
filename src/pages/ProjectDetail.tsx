@@ -90,38 +90,32 @@ const ProjectDetail = () => {
       ]
     },
     "digital-saksharta": {
-      title: "Digital Saksharta Program",
-      subtitle: "Digital Literacy Initiative",
-      description: "A basic digital literacy program that introduces students and villagers to essential digital tools, online transactions, and cybersecurity awareness.",
-      fullDescription: "Started from August 15, 2023, this comprehensive program has trained more than 150 students from five villages. The program covers basic computer literacy and digital skills essential for modern life, bridging the digital divide in rural communities.",
+      title: "Digital Literacy Program",
+      description: "A basic digital literacy program introducing students and villagers from 5 villages to essential digital tools, online transactions, and cybersecurity awareness.",
+      fullDescription: "Started from August 15, 2023, this program has trained more than 180 students from five villages. The program covers basic computer literacy and digital skills essential for modern life, bridging the digital divide in rural communities.",
       image: "/Digital Saksharta Img.jpg",
-      beneficiaries: "150+ Students",
+      beneficiaries: "180+ Students",
       startDate: "August 15, 2023",
       location: "5 Villages",
       status: "Active",
       category: "Digital Education",
       objectives: [
+        "Provide digital literacy to rural students and villagers",
+        "Promote safe online practices",
         "Bridge the digital divide in rural communities",
-        "Provide basic computer literacy training",
-        "Introduce essential digital tools",
-        "Teach online transaction safety",
-        "Create cybersecurity awareness"
+        "Empower participants with essential digital skills"
       ],
       activities: [
-        "Basic computer training sessions",
-        "Digital tools introduction workshops",
-        "Online safety and cybersecurity training",
-        "Digital transaction guidance",
-        "Internet usage training",
-        "Mobile technology workshops",
-        "Digital literacy assessments"
+        "Basic computer training",
+        "Workshops on online transactions",
+        "Cybersecurity awareness sessions",
+        "Practical digital skills exercises"
       ],
       impact: [
-        "150+ students trained from five villages",
-        "Enhanced digital literacy in rural areas",
-        "Improved access to digital services",
-        "Increased cybersecurity awareness",
-        "Better integration with digital economy"
+        "Increased digital literacy in 5 villages",
+        "Safer online practices",
+        "Greater access to digital resources",
+        "Empowered rural youth and adults"
       ]
     },
     "pankh-sapno-ki-udaan": {
@@ -268,10 +262,10 @@ const ProjectDetail = () => {
     "be-the-change": {
       title: "Be the Change",
       subtitle: "Free Library Initiative",
-      description: "A collaborative project with Need Sanstha to create a free library in Pandharkawda for students, providing access to educational resources and study materials.",
-      fullDescription: "This initiative aims to bridge the educational gap by providing free access to books, study materials, and a conducive learning environment for students in Pandharkawda. The library serves as a hub for knowledge sharing, academic support, and community learning. Partnering with Need Sanstha, this project ensures that quality educational resources are accessible to all students regardless of their economic background. The library provides a quiet study space, access to textbooks, reference materials, and digital resources to support students in their academic journey.",
-      image: "https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800",
-      beneficiaries: "Students in Pandharkawda",
+      description: "In many rural communities, a lack of resources and high costs can make it difficult for students to achieve their academic dreams. At Be the Change, we are dedicated to bridging this educational gap. Our free library provides a welcoming space where rural students can access essential resources, receive personalized guidance, and build a foundation for a successful future. We are committed to removing financial barriers and empowering you to reach your full potential.",
+      fullDescription: "Be the Change is a collaborative project with Need Sanstha to create a free library in Pandharkawda for students. The library offers a quiet study space, access to books, reference materials, and digital resources. It is designed to help rural students overcome financial and resource barriers, receive personalized guidance, and build a strong foundation for their academic and personal growth. By fostering a culture of reading and learning, the project empowers students to pursue their dreams and achieve success.",
+      image: "/Be the change image .jpg",
+      beneficiaries: "",
       startDate: "January 2025",
       location: "Pandharkawda, Maharashtra",
       status: "Active",
