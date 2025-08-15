@@ -45,19 +45,19 @@ const StatsSection = () => {
       color: "text-purple-600"
     },
     {
-      number: "100+",
+      number: "25+",
       label: "Students Supported",
       projectName: "Be The Change",
       description: "Free Library Initiative",
-      logo: "/Project Logos/Be The Change.png",
+      logo: "/Project Logos/BE THE CHANGE.png",
       color: "text-indigo-600"
     },
     {
-      number: "500+",
+      number: "30+",
       label: "Rural Communities",
       projectName: "Jan-Setu",
       description: "Learn And Earn Program",
-      logo: "/Project Logos/Jan-Setu.png",
+      logo: "/Project Logos/JANSETU.png",
       color: "text-teal-600"
     }
   ];
@@ -78,27 +78,27 @@ const StatsSection = () => {
           </p>
         </div>
         
-        <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center flex-shrink-0 border-2 border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-              <div className="mb-4">
+            <div key={index} className="text-center flex-shrink-0 border-2 border-gray-200 rounded-xl p-4 sm:p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="mb-3 sm:mb-4">
                 <img 
                   src={stat.logo} 
                   alt={stat.projectName}
-                  className="w-20 h-20 mx-auto object-contain"
+                  className="w-16 h-16 sm:w-20 sm:h-20 mx-auto object-contain"
                 />
               </div>
-              <div className={`text-2xl sm:text-3xl lg:text-4xl font-bold ${stat.color} mb-2 sm:mb-3`}>
+              <div className={`text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold ${stat.color} mb-1 sm:mb-2 lg:mb-3`}>
                 {stat.number}
               </div>
-              <div className="text-base sm:text-lg font-semibold text-gray-800 mb-1 sm:mb-2">
+              <div className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 mb-1 sm:mb-2">
                 {stat.label}
               </div>
-              <div className={`text-lg sm:text-xl font-bold ${stat.color} mb-2`}>
+              <div className={`text-base sm:text-lg lg:text-xl font-bold ${stat.color} mb-1 sm:mb-2`}>
                 {stat.projectName}
               </div>
               {stat.highlightedText && (
-                <div className={`text-sm font-semibold ${stat.color} mb-1`}>
+                <div className={`text-xs sm:text-sm font-semibold ${stat.color} mb-1`}>
                   {stat.highlightedText}
                 </div>
               )}
