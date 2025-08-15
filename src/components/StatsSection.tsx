@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, Users, BookOpen, Heart, Award, Target, Monitor } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 const StatsSection = () => {
   const stats = [
@@ -9,50 +9,56 @@ const StatsSection = () => {
       projectName: "Nirmiti",
       highlightedText: "The Gang of Girls",
       description: "(Adolescent Girls Holistic Development)",
-      icon: BookOpen,
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
-      borderColor: "border-blue-200"
+      logo: "/Project Logos/Nirmiti.png",
+      color: "text-blue-600"
     },
     {
       number: "315+",
       label: "Students in Primary Education",
       projectName: "Pankh",
       description: "Sapno Ki Udaan program",
-      icon: Heart,
-      color: "text-pink-600",
-      bgColor: "bg-pink-50",
-      borderColor: "border-pink-200"
+      logo: "/Project Logos/PANKH.png",
+      color: "text-pink-600"
     },
     {
       number: "180+",
       label: "Digital Learners",
       projectName: "Foundational Digital Literacy",
       description: "Program In Rural Areas",
-      icon: TrendingUp,
-      color: "text-green-600",
-      bgColor: "bg-green-50",
-      borderColor: "border-green-200"
+      logo: "/Project Logos/Foundational Digital Literacy.png",
+      color: "text-green-600"
     },
     {
       number: "68+",
       label: "Financial Literacy",
       projectName: "Jadui Gullak",
       description: "In Rural Areas",
-      icon: Users,
-      color: "text-orange-600",
-      bgColor: "bg-orange-50",
-      borderColor: "border-orange-200"
+      logo: "/Project Logos/Jadui Gullak (2).png",
+      color: "text-orange-600"
     },
     {
       number: "75+",
       label: "Advanced Digital Literacy Learners",
       projectName: "Digital Literacy",
       description: "Program",
-      icon: Monitor,
-      color: "text-purple-600",
-      bgColor: "bg-purple-50",
-      borderColor: "border-purple-200"
+      logo: "/Project Logos/Digital Literacy.png",
+      color: "text-purple-600"
+    },
+    {
+      number: "100+",
+      label: "Students Supported",
+      projectName: "Be The Change",
+      description: "Free Library Initiative",
+      logo: "/Project Logos/Be The Change.png",
+      color: "text-indigo-600"
+    },
+    {
+      number: "500+",
+      label: "Rural Communities",
+      projectName: "Jan-Setu",
+      description: "Learn And Earn Program",
+      logo: "/Project Logos/Jan-Setu.png",
+      color: "text-teal-600"
     }
   ];
 
@@ -68,16 +74,19 @@ const StatsSection = () => {
             Transforming Lives
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-            For more than two decades, Janhit has consistently delivered impactful programs, 
-            creating sustainable change through grassroots action in tribal and rural communities.
+            For more than two decades, Janhit has consistently delivered impactful programs in over 100 villages, creating sustainable change through grassroots action.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-8">
+        <div className="flex flex-wrap justify-center items-center gap-8 lg:gap-12">
           {stats.map((stat, index) => (
-            <div key={index} className={`${stat.bgColor} ${stat.borderColor} border-2 rounded-2xl p-6 lg:p-8 text-center hover:shadow-lg transition-all duration-300 group hover:-translate-y-1`}>
-              <div className={`w-12 h-12 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 ${stat.bgColor} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-md`}>
-                <stat.icon className={`h-8 w-8 ${stat.color}`} />
+            <div key={index} className="text-center flex-shrink-0 border-2 border-gray-200 rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
+              <div className="mb-4">
+                <img 
+                  src={stat.logo} 
+                  alt={stat.projectName}
+                  className="w-20 h-20 mx-auto object-contain"
+                />
               </div>
               <div className={`text-2xl sm:text-3xl lg:text-4xl font-bold ${stat.color} mb-2 sm:mb-3`}>
                 {stat.number}

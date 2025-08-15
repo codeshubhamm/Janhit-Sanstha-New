@@ -31,6 +31,8 @@ const Footer = () => {
                 href="https://www.facebook.com/share/1C7tpu6LGb/" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Facebook"
+                title="Facebook"
                 className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer"
               >
                 <Facebook className="h-5 w-5" />
@@ -39,6 +41,8 @@ const Footer = () => {
                 href="https://www.instagram.com/janhitsanstha?igsh=MTgzOHEyYzR5Nmt4Zw==" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Instagram"
+                title="Instagram"
                 className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer"
               >
                 <Instagram className="h-5 w-5" />
@@ -47,6 +51,8 @@ const Footer = () => {
                 href="https://whatsapp.com/channel/0029VaftLs52f3ELNd1aqA0X" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                title="WhatsApp"
                 className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer"
               >
                 <MessageCircle className="h-5 w-5" />
@@ -55,6 +61,8 @@ const Footer = () => {
                 href="https://youtube.com/@janhitsanstha?si=LYErzyRrKdp6j8Sm" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="YouTube"
+                title="YouTube"
                 className="bg-orange-100 p-2 rounded-lg hover:bg-orange-500 hover:text-white transition-colors cursor-pointer"
               >
                 <Youtube className="h-5 w-5" />
@@ -130,6 +138,10 @@ const Footer = () => {
               <a href="#" className="text-sm text-gray-500 hover:text-orange-500 transition-colors">Privacy Policy</a>
               <a href="#" className="text-sm text-gray-500 hover:text-orange-500 transition-colors">Terms of Service</a>
             </div>
+          </div>
+          <div className="mt-4 text-center text-xs sm:text-sm">
+            <span className="text-gray-500">Designed & Developed by </span>
+            <span className="font-semibold bg-gradient-to-r from-orange-500 via-green-600 to-orange-500 bg-clip-text text-transparent">Shubham Gungunwar</span>
           </div>
         </div>
       </div>

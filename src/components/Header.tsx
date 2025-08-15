@@ -94,10 +94,19 @@ const Header = () => {
                   About Us
                 </Link>
                 <Link 
+                  to="/sdg-goals" 
+                  onClick={closeAboutDropdown}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isActive('/sdg-goals') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                  }`}
+                >
+                  SDG Goals
+                </Link>
+                <Link 
                   to="/projects" 
                   onClick={closeAboutDropdown}
                   className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                    isActive('/projects') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                    isActive('/projects') ? 'text-orange-500 bg-orange-500' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
                   }`}
                 >
                   Our Projects
@@ -276,6 +285,17 @@ const Header = () => {
               }`}
             >
               ℹ️ About Us
+            </Link>
+            <Link 
+              to="/sdg-goals" 
+              onClick={closeMobileMenu}
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
+                isActive('/sdg-goals') 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
+                  : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+              }`}
+            >
+              🌍 SDG Goals
             </Link>
             <Link 
               to="/projects" 

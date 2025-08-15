@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import LaunchOverlay from './components/LaunchOverlay';
 import Home from './pages/Home';
 import About from './pages/About';
+import SDGGoals from './pages/SDGGoals';
 import Projects from './pages/Projects';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
@@ -16,25 +18,33 @@ import Trusty from './pages/Trusty';
 import Awards from './pages/Awards';
 
 function App() {
+  const [launched, setLaunched] = React.useState(false);
+
   return (
     <Router>
       <div className="min-h-screen">
-        <ScrollToTop />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/donate" element={<Donate />} />
-          <Route path="/media" element={<Media />} />
-          <Route path="/covid-pandemic" element={<CovidPandemic />} />
-          <Route path="/trusty" element={<Trusty />} />
-          <Route path="/awards" element={<Awards />} />
-          <Route path="/projects/:projectId" element={<ProjectDetail />} />
-        </Routes>
-        <Footer />
+        {!launched && <LaunchOverlay onFinish={() => setLaunched(true)} />}
+        {launched && (
+          <>
+            <ScrollToTop />
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/sdg-goals" element={<SDGGoals />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/donate" element={<Donate />} />
+              <Route path="/media" element={<Media />} />
+              <Route path="/covid-pandemic" element={<CovidPandemic />} />
+              <Route path="/trusty" element={<Trusty />} />
+              <Route path="/awards" element={<Awards />} />
+              <Route path="/projects/:projectId" element={<ProjectDetail />} />
+            </Routes>
+            <Footer />
+          </>
+        )}
       </div>
     </Router>
   );
