@@ -159,6 +159,9 @@ const ProjectDetail = () => {
       description: "A platform for environmental conservation activities, including afforestation drives, biodiversity awareness, and sustainable livelihood practices.",
       fullDescription: "This initiative focuses on environmental awareness through comprehensive programs including tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, alternatives to plastic, environmental protection slogans, drawing competitions, street plays, and rallies. Currently, the forum has over 40 active youth members committed to environmental protection.",
       image: "/Nisarg Mitr manch.jpg",
+      additionalImages: [
+        "/Nisarg mitr manch photo 2.jpg"
+      ],
       beneficiaries: "40+ Youth Members",
       startDate: "Ongoing",
       location: "Multiple Villages",
@@ -385,6 +388,24 @@ const ProjectDetail = () => {
                 className="rounded-3xl shadow-2xl w-full h-96 object-cover"
               />
             </div>
+
+            {/* Additional Project Photos */}
+            {(project as any).additionalImages && (project as any).additionalImages.length > 0 && (
+              <div className="mt-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Project Gallery</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {(project as any).additionalImages.map((imageSrc: string, index: number) => (
+                    <div key={index} className="relative">
+                      <img 
+                        src={imageSrc} 
+                        alt={`${project.title} - Photo ${index + 1}`}
+                        className="rounded-2xl shadow-lg w-full h-64 object-cover hover:shadow-xl transition-shadow duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
