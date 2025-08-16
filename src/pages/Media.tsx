@@ -65,36 +65,94 @@ const Media = () => {
         </div>
       </section>
 
-      {/* Content Section */}
+      {/* Nisarg Mitr Manch Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Latest Updates</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nisarg Mitr Manch</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Stay connected with our latest achievements, community stories, and program developments.
+              Our dedicated wing leading environmental conservation, community development, and pandemic response initiatives.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Update Cards */}
+            {/* Environmental Conservation */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Jadui Gullak Launch</h3>
-                <p className="text-gray-600 mb-4">Exciting launch of our innovative financial literacy program for children on January 1, 2025.</p>
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  🌱
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Environmental Conservation</h3>
+                <p className="text-gray-600 mb-4 text-center">Leading tree plantation drives, water conservation projects, and sustainable farming initiatives across rural Maharashtra.</p>
+                <div className="text-center">
+                  <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                    Active Projects: 15+
+                  </span>
+                </div>
               </div>
             </div>
             
+            {/* COVID-19 Pandemic Response */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Digital Saksharta Success</h3>
-                <p className="text-gray-600 mb-4">180+ students trained in digital literacy across rural villages.</p>
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  🏥
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">COVID-19 Response</h3>
+                <p className="text-gray-600 mb-4 text-center">Every pandemic initiative was led by Nisarg Mitr Manch, providing essential support, awareness campaigns, and community assistance.</p>
+                <div className="text-center">
+                  <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                    Communities Served: 50+
+                  </span>
+                </div>
               </div>
             </div>
             
+            {/* Community Development */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Pankh Program Growth</h3>
-                <p className="text-gray-600 mb-4">315+ students now benefiting from our primary education initiative.</p>
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  🏘️
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Community Development</h3>
+                <p className="text-gray-600 mb-4 text-center">Empowering rural communities through skill development, infrastructure projects, and sustainable livelihood programs.</p>
+                <div className="text-center">
+                  <span className="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">
+                    Villages Impacted: 25+
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Additional Nisarg Mitr Manch Info */}
+          <div className="mt-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                <p className="text-gray-700 mb-4">
+                  Nisarg Mitr Manch serves as the dedicated environmental and community development wing of Janhit Sanstha, 
+                  working tirelessly to create sustainable change in rural Maharashtra.
+                </p>
+                <p className="text-gray-700">
+                  From environmental conservation to pandemic response, we ensure that every initiative aligns with our 
+                  commitment to community welfare and sustainable development.
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="inline-flex items-center bg-green-100 text-green-800 px-6 py-3 rounded-full text-lg font-medium mb-4">
+                  🌿 Nature's Friends, Community's Partners
+                </div>
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="bg-white rounded-lg p-3">
+                    <div className="font-bold text-green-600">Environmental Projects</div>
+                    <div className="text-gray-600">20+ Active</div>
+                  </div>
+                  <div className="bg-white rounded-lg p-3">
+                    <div className="font-bold text-blue-600">Community Programs</div>
+                    <div className="text-gray-600">15+ Running</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

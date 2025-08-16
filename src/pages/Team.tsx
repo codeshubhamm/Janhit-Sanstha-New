@@ -12,7 +12,7 @@ const Team = () => {
       experience: "Founder"
     },
     {
-      name: "Mr. Vivak (Subodh) Kalpande",
+      name: "Mr. Vivek (Subodh) Kalpande",
       position: "President of Janhit Sanstha",
       bio: "Leading the organization with strategic vision and commitment to rural development initiatives across Maharashtra.",
       specialization: "Strategic Leadership",
@@ -36,7 +36,7 @@ const Team = () => {
       experience: "Project Coordinator"
     },
     {
-      name: "Shewta Kalpande",
+      name: "Shweta Kalpande",
       position: "Project Coordinator of Pankh and Women Empowerment",
       bio: "Leading initiatives focused on women's empowerment, skill development, and creating opportunities for rural women through the Pankh program.",
       specialization: "Women Empowerment & Pankh Program",

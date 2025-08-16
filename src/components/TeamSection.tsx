@@ -76,7 +76,7 @@ const TeamSection = () => {
                 <div className="absolute bottom-4 left-4 right-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
                   <div className="flex space-x-3">
                     <a 
-                      href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                      href="https://www.facebook.com/share/1CgDuhX4Jz/" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="bg-white/20 backdrop-blur-sm p-2 rounded-lg cursor-pointer hover:bg-white/30 transition-colors"

@@ -120,6 +120,15 @@ const Header = () => {
                 >
                   Awards
                 </Link>
+                <Link 
+                  to="/annual-reports" 
+                  onClick={closeAboutDropdown}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isActive('/annual-reports') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                  }`}
+                >
+                  Annual Reports
+                </Link>
               </div>
             </div>
             
@@ -196,7 +205,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               <a 
-                href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                href="https://www.facebook.com/share/1CgDuhX4Jz/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg hover:bg-orange-100 transition-colors"
@@ -320,6 +329,17 @@ const Header = () => {
               🏆 Awards
             </Link>
             <Link 
+              to="/annual-reports" 
+              onClick={closeMobileMenu}
+              className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
+                isActive('/annual-reports') 
+                  ? 'text-orange-500 bg-orange-50 border-l-4 border-orange-500' 
+                  : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+              }`}
+            >
+              📊 Annual Reports
+            </Link>
+            <Link 
               to="/media" 
               onClick={closeMobileMenu}
               className={`font-medium py-3 px-4 rounded-xl transition-all duration-300 flex items-center ${
@@ -382,7 +402,7 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-center space-x-4">
                 <a 
-                  href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                  href="https://www.facebook.com/share/1CgDuhX4Jz/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="p-3 rounded-full bg-blue-50 hover:bg-blue-100 transition-colors"

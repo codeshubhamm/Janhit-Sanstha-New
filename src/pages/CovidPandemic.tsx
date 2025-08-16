@@ -70,7 +70,7 @@ const CovidPandemic = () => {
             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-600">Pandemic Efforts</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Janhit Sanstha's comprehensive response to the COVID-19 pandemic through various initiatives and community support programs.
+            Every pandemic initiative was led by Nisarg Mitra Manch, the dedicated wing of Janhit Sanstha.
           </p>
         </div>
       </section>

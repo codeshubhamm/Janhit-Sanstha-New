@@ -16,18 +16,13 @@ const Awards = () => {
   const awardImages = [
     "/Awards Janhit/1000003310.jpg",
     "/Awards Janhit/1000003311.jpg",
-    "/Awards Janhit/1000003312.jpg",
     "/Awards Janhit/1000003317.jpg",
-    "/Awards Janhit/1000003318.jpg",
     "/Awards Janhit/1000003319.jpg",
-    "/Awards Janhit/1000003320.jpg",
     "/Awards Janhit/1000003322.jpg",
     "/Awards Janhit/1000003325.jpg",
-    "/Awards Janhit/1000005903.jpg",
     "/Awards Janhit/1000005904.jpg",
     "/Awards Janhit/1000009621.jpg",
     "/Awards Janhit/1000009622.jpg",
-    "/Awards Janhit/1000009623.jpg",
     "/Awards Janhit/1000009624.jpg",
     "/Awards Janhit/1000009625.jpg",
     "/Awards Janhit/1000009626.jpg"
@@ -76,7 +71,7 @@ const Awards = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {awardImages.map((image, index) => (
               <div 
                 key={index} 

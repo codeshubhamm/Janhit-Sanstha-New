@@ -28,7 +28,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.facebook.com/share/1C7tpu6LGb/" 
+                href="https://www.facebook.com/share/1CgDuhX4Jz/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Facebook"

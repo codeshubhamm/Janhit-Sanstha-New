@@ -16,6 +16,7 @@ import Media from './pages/Media';
 import CovidPandemic from './pages/CovidPandemic';
 import Trusty from './pages/Trusty';
 import Awards from './pages/Awards';
+import AnnualReports from './pages/AnnualReports';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/covid-pandemic" element={<CovidPandemic />} />
           <Route path="/trusty" element={<Trusty />} />
           <Route path="/awards" element={<Awards />} />
+          <Route path="/annual-reports" element={<AnnualReports />} />
           <Route path="/projects/:projectId" element={<ProjectDetail />} />
         </Routes>
         <Footer />
