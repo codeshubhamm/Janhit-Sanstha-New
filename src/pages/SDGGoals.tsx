@@ -52,14 +52,6 @@ const SDGGoals = () => {
       janhitContribution: "Environmental conservation and water management awareness"
     },
     {
-      number: 7,
-      title: "Affordable and Clean Energy",
-      description: "Ensure access to affordable, reliable energy",
-      image: "/SDG GOALS IMAGES/SDG GOAL 7.png",
-      color: "from-yellow-500 to-yellow-600",
-      janhitContribution: "Promoting sustainable energy practices in rural areas"
-    },
-    {
       number: 13,
       title: "Climate Action",
       description: "Take urgent action to combat climate change",

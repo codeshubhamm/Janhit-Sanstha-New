@@ -12,7 +12,7 @@ const Team = () => {
       experience: "Founder"
     },
     {
-      name: "Mr. Subodh Kalpande",
+      name: "Mr. Vivak (Subodh) Kalpande",
       position: "President of Janhit Sanstha",
       bio: "Leading the organization with strategic vision and commitment to rural development initiatives across Maharashtra.",
       specialization: "Strategic Leadership",
@@ -44,20 +44,20 @@ const Team = () => {
       experience: "Project Coordinator"
     },
     {
-      name: "Chiranjiv Betwar",
-      position: "Tutor of Tally",
-      bio: "Providing comprehensive training in Tally software and accounting practices to empower rural communities with financial literacy skills.",
-      specialization: "Finance",
-      education: "B.Com and Tally",
-      experience: "Tally Tutor"
-    },
-    {
       name: "Sagar Bawne",
       position: "CEO of Janhit Sanstha",
       bio: "Chief Executive Officer driving organizational growth and ensuring effective implementation of all development programs.",
       specialization: "Executive Leadership",
       education: "BCA, MCA, BSW",
       experience: "CEO"
+    },
+    {
+      name: "Chiranjiv Betwar",
+      position: "Tutor of Tally",
+      bio: "Providing comprehensive training in Tally software and accounting practices to empower rural communities with financial literacy skills.",
+      specialization: "Finance",
+      education: "B.Com and Tally",
+      experience: "Tally Tutor"
     },
     {
       name: "Bharat Dorshettiwar",

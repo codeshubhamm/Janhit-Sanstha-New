@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const CovidPandemic = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   const covidImages = [
     "/Covid Pandamic brochers Janhit Sanstha/IMG-20250804-WA0021.jpg",
@@ -25,12 +26,36 @@ const CovidPandemic = () => {
     "/Covid Pandamic brochers Janhit Sanstha/IMG-20250804-WA0003.jpg"
   ];
 
-  const openModal = (image: string) => {
+  const openModal = (image: string, index: number) => {
     setSelectedImage(image);
+    setCurrentImageIndex(index);
   };
 
   const closeModal = () => {
     setSelectedImage(null);
+    setCurrentImageIndex(0);
+  };
+
+  const nextImage = () => {
+    const nextIndex = (currentImageIndex + 1) % covidImages.length;
+    setCurrentImageIndex(nextIndex);
+    setSelectedImage(covidImages[nextIndex]);
+  };
+
+  const previousImage = () => {
+    const prevIndex = currentImageIndex === 0 ? covidImages.length - 1 : currentImageIndex - 1;
+    setCurrentImageIndex(prevIndex);
+    setSelectedImage(covidImages[prevIndex]);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'ArrowRight') {
+      nextImage();
+    } else if (e.key === 'ArrowLeft') {
+      previousImage();
+    } else if (e.key === 'Escape') {
+      closeModal();
+    }
   };
 
   return (
@@ -65,7 +90,7 @@ const CovidPandemic = () => {
               <div 
                 key={index} 
                 className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 cursor-pointer"
-                onClick={() => openModal(image)}
+                onClick={() => openModal(image, index)}
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -130,7 +155,7 @@ const CovidPandemic = () => {
       {/* Modal */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={closeModal}>
-          <div className="relative max-w-4xl max-h-full">
+          <div className="relative max-w-4xl max-h-full" onKeyDown={handleKeyDown} tabIndex={0}>
             <button
               onClick={closeModal}
               className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors duration-200 z-10"
@@ -138,12 +163,44 @@ const CovidPandemic = () => {
             >
               <X className="w-8 h-8" />
             </button>
+            
+            {/* Image Counter */}
+            <div className="absolute -top-12 left-0 text-white text-lg font-medium">
+              {currentImageIndex + 1} / {covidImages.length}
+            </div>
+            
             <img
               src={selectedImage}
               alt="COVID-19 Response"
               className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />
+            
+            {/* Navigation Buttons */}
+            {covidImages.length > 1 && (
+              <>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    previousImage();
+                  }}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-3 transition-all duration-200 z-10"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft className="w-8 h-8" />
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    nextImage();
+                  }}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-3 transition-all duration-200 z-10"
+                  aria-label="Next image"
+                >
+                  <ChevronRight className="w-8 h-8" />
+                </button>
+              </>
+            )}
           </div>
         </div>
       )}

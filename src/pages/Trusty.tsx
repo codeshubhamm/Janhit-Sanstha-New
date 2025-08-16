@@ -33,7 +33,7 @@ const Trusty = () => {
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr className="hover:bg-orange-50 transition-colors duration-200">
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-900">Vivek Vasantrao Kalpande</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-semibold text-gray-900">Vivak (Subodh) Kalpande</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-orange-600 font-semibold">President</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Business, Journalist</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">BA Graduate</td>
