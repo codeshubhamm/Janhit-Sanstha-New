@@ -14,8 +14,7 @@ const About = () => {
   const values = [
     { icon: Heart, title: "Transparency", description: "We maintain complete transparency in all our operations and fund utilization" },
     { icon: Award, title: "Morality", description: "We uphold the highest moral standards in our work and interactions" },
-    { icon: Users, title: "Discipline", description: "We follow disciplined approaches to achieve sustainable development" },
-    { icon: Lightbulb, title: "Innovation", description: "We continuously seek creative approaches to rural challenges" }
+    { icon: Users, title: "Discipline", description: "We follow disciplined approaches to achieve sustainable development" }
   ];
 
   return (
