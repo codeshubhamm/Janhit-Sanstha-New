@@ -13,6 +13,7 @@ const ProjectsPreview = () => {
       description: "This initiative empowers 250+ adolescent girls through education, skill development, and awareness programs to enhance their confidence and decision-making abilities.",
       detailedDescription: "Under the 'NIRMITI… A Gang of Girls' program launched from July 1, 2024, adolescent girls from tribal and rural areas receive training in education, health, personality development, career guidance, counseling, menstrual hygiene, self-defense, and leadership.",
       image: "/Kishor Vikas Img.jpg",
+      logo: "/Logos Before Name/Nirmiti_The_Gang_Of_Girls_Logo-removebg-preview.png",
       beneficiaries: "250+ Girls",
       status: "Active",
       category: "Women Empowerment"
@@ -23,6 +24,7 @@ const ProjectsPreview = () => {
       description: "A financial literacy program designed for children, teaching them savings habits, budget management, and financial decision-making skills.",
       detailedDescription: "Launched on January 1, 2025, this program provides guidance on financial literacy to students. Nationalized banking accounts are opened for children, spreading awareness about savings, proper use of money, and financial management. After the Jadui Gullak arrived, kids started spending less on outside snacks like chips and began saving their money. Each time they dropped a coin in, a sweet voice said, 'Well done! You saved money!' Slowly, Gradually, saving became a habit — and their <span className='font-semibold text-orange-600'>health and hygiene also improved a lot</span>. The Jadui Gullak didn't just hold money — it taught them the value of money.",
       image: "/Jadui Gulak Img.jpg",
+      logo: "/Logos Before Name/Gadui_Gullak_Logo-removebg-preview.png",
       beneficiaries: "68+ Students",
       status: "Active",
       category: "Financial Education"
@@ -33,6 +35,7 @@ const ProjectsPreview = () => {
       description: "A basic digital literacy program that introduces students and villagers to essential digital tools, online transactions, and cybersecurity awareness.",
       detailedDescription: "Started from August 15, 2023, this program has trained more than 180 students from five villages. The program covers basic computer literacy and digital skills essential for modern life.",
       image: "/Digital Saksharta Img.jpg",
+      logo: "/Project Logos/Digital Literacy.png",
       beneficiaries: "180+ Students",
       status: "Active",
       category: "Digital Education"
@@ -44,6 +47,7 @@ const ProjectsPreview = () => {
       description: "Educational initiative serving 315+ students from grades 1-5 across 15 villages with trained local women educators.",
       detailedDescription: "Operating since April 1, 2023, this project operates in 15 villages around the Tipeshwar Wildlife Sanctuary. Trained women educators appointed on honorarium basis in each village conduct daily 2-hour learning sessions for children, helping improve their academic performance and building strong connections with parents. Janhit provides educational materials and drawing supplies, which are used to conduct Anand Sabha sessions.",
       image: "/Pankh Replace.jpg",
+      logo: "/Project Logos/PANKH.png",
       beneficiaries: "315+ Students",
       status: "Active",
       category: "Education"
@@ -54,6 +58,7 @@ const ProjectsPreview = () => {
       description: "A platform for environmental conservation activities, including afforestation drives, biodiversity awareness, and sustainable livelihood practices.",
       detailedDescription: "This initiative focuses on environmental awareness through tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, environmental protection activities, and has over 40 active youth members.",
       image: "/Nisarg Mitr manch.jpg",
+      logo: "/Logos Before Name/Nisarg_mitr_manch-removebg-preview.png",
       beneficiaries: "40+ Youth Members",
       status: "Active",
       category: "Environment"
@@ -64,6 +69,7 @@ const ProjectsPreview = () => {
       description: "In rural areas, students are given advanced training in Coding, Tally, Web Development, Web Design, Cyber Security and other computer-related skills.",
       detailedDescription: "The organization is trying to create employment-oriented skilled youth in backward areas. Through this project, more than 75 students have been empowered and guided for future employment or entrepreneurship. This initiative is supported by Grand Maratha Foundation.",
       image: "/Digital Litracy Photo.jpg",
+      logo: "/Project Logos/Foundational Digital Literacy.png",
       beneficiaries: "75+ Students",
       status: "Active",
       category: "Advanced Technology"
@@ -74,7 +80,8 @@ const ProjectsPreview = () => {
       subtitle: "Learn And Earn",
       description: "The Jan-Setu program helps rural people in the areas surrounding the Tipeshwar Sanctuary to access government schemes, benefits, and services.",
       detailedDescription: "It facilitates the submission of government forms, information access, and application assistance at the local level. The project aims to spread awareness about government schemes and provide assistance with form filling and documentation, especially for marginalized communities. The program started on April 1, 2025.",
-      image: "https://images.pexels.com/photos/5699456/pexels-photo-5699456.jpeg?auto=compress&cs=tinysrgb&w=600",
+      image: "/Jansetu Porject Photo.jpg",
+      logo: "/Project Logos/JANSETU.png",
       beneficiaries: "Rural Communities",
       status: "Upcoming",
       category: "Government Services"
@@ -86,6 +93,7 @@ const ProjectsPreview = () => {
       description: "In many rural communities, a lack of resources and high costs can make it difficult for students to achieve their academic dreams. At Be the Change, we are dedicated to bridging this educational gap. Our free library provides a welcoming space where rural students can access essential resources, receive personalized guidance, and build a foundation for a successful future. We are committed to removing financial barriers and empowering you to reach your full potential.",
       detailedDescription: "Be the Change is a collaborative project with Need Sanstha to create a free library in Pandharkawda for students. The library offers a quiet study space, access to books, reference materials, and digital resources. It is designed to help rural students overcome financial and resource barriers, receive personalized guidance, and build a strong foundation for their academic and personal growth. By fostering a culture of reading and learning, the project empowers students to pursue their dreams and achieve success.",
       image: "/Be the change image .jpg",
+      logo: "/Project Logos/BE THE CHANGE.png",
       beneficiaries: "",
       status: "Active",
       category: "Education & Community"
@@ -129,14 +137,23 @@ const ProjectsPreview = () => {
               
               <div className={`space-y-4 lg:space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                 <div>
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 lg:mb-3">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">{project.title}</span>
-                  </h3>
-                  {project.subtitle && (
-                    <h4 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-700 mb-3 lg:mb-4">
-                      {project.subtitle}
-                    </h4>
-                  )}
+                  <div className="flex items-center mb-4">
+                    <img 
+                      src={project.logo} 
+                      alt={`${project.title} logo`}
+                      className="w-24 h-24 mr-4 object-contain"
+                    />
+                    <div>
+                      <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 lg:mb-3">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">{project.title}</span>
+                      </h3>
+                      {project.subtitle && (
+                        <h4 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-700 mb-3 lg:mb-4">
+                          {project.subtitle}
+                        </h4>
+                      )}
+                    </div>
+                  </div>
                   <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed mb-3 lg:mb-4">
                     {project.description}
                   </p>
