@@ -100,6 +100,10 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-orange-500 flex-shrink-0 mt-1" />
                 <span>Telangtakli, Tq Kelapur, Dist Yavatmal - 445302</span>
               </div>
+              <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-orange-500 flex-shrink-0 mt-1" />
+                <span>Working Office: In front of Post Office, above Swami Medical, Pandharkawada, Tq. Kelapur, Dist. Yavatmal - 445302</span>
+              </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-orange-500 flex-shrink-0" />
                 <span>+91 8275394711</span>

@@ -3,10 +3,20 @@ import React, { useState } from 'react';
 const Media = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isFlipping, setIsFlipping] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const brochurePages = [
     "/brocher page 1.jpg",
     "/brocher page 2.jpg"
+  ];
+
+  const newsCuttings = [
+    "/News Cuttings/IMG-20250816-WA0011.jpg",
+    "/News Cuttings/IMG-20250816-WA0012.jpg",
+    "/News Cuttings/IMG-20250816-WA0013.jpg",
+    "/News Cuttings/IMG-20250816-WA0010.jpg",
+    "/News Cuttings/IMG-20250816-WA0009.jpg",
+    "/News Cuttings/IMG-20250816-WA0008.jpg"
   ];
 
   const nextPage = () => {
@@ -28,6 +38,15 @@ const Media = () => {
       }, 300);
     }
   };
+
+  const openImagePreview = (imageSrc: string) => {
+    setSelectedImage(imageSrc);
+  };
+
+  const closeImagePreview = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -175,6 +194,63 @@ const Media = () => {
           </div>
         </div>
       </section>
+
+      {/* News Papers Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">News Papers</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Explore media coverage and news articles featuring Janhit Sanstha's impactful work in rural development and community empowerment.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {newsCuttings.map((cutting, index) => (
+              <div key={index} className="flex justify-center">
+                <img 
+                  src={cutting} 
+                  alt={`News Cutting ${index + 1}`}
+                  className="w-full h-auto rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-300"
+                  onClick={() => openImagePreview(cutting)}
+                />
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-6">
+              📰 Our work has been featured in various newspapers and media outlets, highlighting the positive impact we're making in rural communities.
+            </p>
+            <div className="inline-flex items-center bg-orange-100 text-orange-800 px-6 py-3 rounded-full text-sm font-medium">
+              🎯 Building Trust Through Transparency
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Preview Modal */}
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4"
+          onClick={closeImagePreview}
+        >
+          <div className="relative max-w-4xl max-h-full">
+            <button
+              onClick={closeImagePreview}
+              className="absolute -top-12 right-0 bg-white text-gray-800 rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
+            >
+              ✕
+            </button>
+            <img 
+              src={selectedImage} 
+              alt="News Cutting Preview"
+              className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

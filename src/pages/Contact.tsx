@@ -54,6 +54,20 @@ const Contact = () => {
 
                 <div className="flex items-start space-x-4 p-6 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors duration-300">
                   <div className="bg-orange-500 p-3 rounded-xl shadow-lg">
+                    <MapPin className="h-6 w-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Working Office</h3>
+                    <p className="text-gray-600">
+                      In front of Post Office, above Swami Medical<br />
+                      Pandharkawada, Tq. Kelapur, Dist. Yavatmal<br />
+                      Maharashtra, India - 445302
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4 p-6 bg-orange-50 rounded-2xl hover:bg-orange-100 transition-colors duration-300">
+                  <div className="bg-orange-500 p-3 rounded-xl shadow-lg">
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <div>

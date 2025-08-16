@@ -4,12 +4,20 @@ import { Award } from 'lucide-react';
 const StatsSection = () => {
   const stats = [
     {
+      number: "40+",
+      label: "Environmental Conservation",
+      projectName: "Nisarg Mitra Manch",
+      description: "Youth Members",
+      logo: "/Logos Before Name/Nisarg_mitr_manch-removebg-preview.png",
+      color: "text-emerald-600"
+    },
+    {
       number: "250+",
       label: "Students Education",
       projectName: "Nirmiti",
       highlightedText: "The Gang of Girls",
       description: "(Adolescent Girls Holistic Development)",
-      logo: "/Project Logos/Nirmiti.png",
+      logo: "/Logos Before Name/Nirmiti_The_Gang_Of_Girls_Logo-removebg-preview.png",
       color: "text-blue-600"
     },
     {
@@ -33,7 +41,7 @@ const StatsSection = () => {
       label: "Financial Literacy",
       projectName: "Jadui Gullak",
       description: "In Rural Areas",
-      logo: "/Project Logos/Jadui Gullak (2).png",
+      logo: "/Logos Before Name/Gadui_Gullak_Logo-removebg-preview.png",
       color: "text-orange-600"
     },
     {

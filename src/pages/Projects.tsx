@@ -8,6 +8,18 @@ const Projects = () => {
 
   const projects = [
     {
+      id: "nisarg-mitra-manch",
+      title: "Nisarg Mitra Manch",
+      description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
+      detailedDescription: "This initiative focuses on environmental awareness through tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, environmental protection activities, and has over 40 active youth members.",
+      image: "/Nisarg Mitr manch.jpg",
+      logo: "/Logos Before Name/Nisarg_mitr_manch-removebg-preview.png",
+      beneficiaries: "40+ Youth Members",
+      status: "Active",
+      category: "Environment",
+      highlights: ["Tree Plantation", "Waste Management", "Environmental Education", "Youth Engagement"]
+    },
+    {
       id: "kishori-vikas",
       title: "Nirmiti",
       subtitle: "The Gang of Girls",
@@ -56,18 +68,6 @@ const Projects = () => {
       status: "Active",
       category: "Education",
       highlights: ["Early Childhood Education", "Women Educators", "Academic Performance", "Parent Engagement"]
-    },
-    {
-      id: "nisarg-mitra-manch",
-      title: "Nisarg Mitra Manch",
-      description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
-      detailedDescription: "This initiative focuses on environmental awareness through tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, environmental protection activities, and has over 40 active youth members.",
-      image: "/Nisarg Mitr manch.jpg",
-      logo: "/Logos Before Name/Nisarg_mitr_manch-removebg-preview.png",
-      beneficiaries: "40+ Youth Members",
-      status: "Active",
-      category: "Environment",
-      highlights: ["Tree Plantation", "Waste Management", "Environmental Education", "Youth Engagement"]
     },
     {
       id: "advanced-digital-literacy",

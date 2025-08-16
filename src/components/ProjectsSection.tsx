@@ -5,10 +5,21 @@ const ProjectsSection = () => {
   const navigate = useNavigate();
   const projects = [
     {
+      title: "Nisarg Mitra Manch",
+      description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
+      detailedDescription: "Nisarg Mitra Manch encourages environmental conservation through afforestation drives, clean-up campaigns, biodiversity awareness sessions, and sustainable livelihood education. The platform promotes community participation in preserving natural resources around the Tipeshwar Wildlife Sanctuary.",
+      image: "/Nisarg Mitr manch.jpg",
+      logo: "/Logos Before Name/Nisarg_mitr_manch-removebg-preview.png",
+      beneficiaries: "16 Villages",
+      status: "Active",
+      category: "Environment"
+    },
+    {
       title: "Kishori Vikas Project",
       description: "This initiative empowers 350 adolescent girls through structured programs focused on education and life skills, workshops on health, hygiene, and self-defense, leadership development and decision-making skills, and career guidance and mentorship.",
       detailedDescription: "The project's primary aim is to build confidence, independence, and informed life choices among adolescent girls in rural communities. It creates a safe and nurturing space for young girls to thrive academically and personally.",
       image: "/Kishor Vikas Img.jpg",
+      logo: "/Logos Before Name/Nirmiti_The_Gang_Of_Girls_Logo-removebg-preview.png",
       beneficiaries: "350 Girls",
       status: "Active",
       category: "Women Empowerment"
@@ -18,6 +29,7 @@ const ProjectsSection = () => {
       description: "A financial literacy program designed for 100 children, teaching them savings habits, budget management, and financial decision-making skills.",
       detailedDescription: "Jadui Gullak engages children in interactive games and activities that simulate real-life financial scenarios, helping them develop practical money management skills from a young age. The program aims to build a foundation for responsible financial behavior in adulthood.",
       image: "/Jadui Gulak Img.jpg",
+      logo: "/Logos Before Name/Gadui_Gullak_Logo-removebg-preview.png",
       beneficiaries: "100 Children",
       status: "Active",
       category: "Financial Education"
@@ -27,6 +39,7 @@ const ProjectsSection = () => {
       description: "A basic digital literacy program introducing 230 students and villagers from 5 villages to essential digital tools, online transactions, and cybersecurity awareness.",
       detailedDescription: "Digital Saksharta bridges the digital divide by providing hands-on training in using computers, smartphones, and the internet. Participants learn about online safety, government e-services, and digital payments, empowering rural communities to participate in the digital economy.",
       image: "/Digital Saksharta Img.jpg",
+      logo: "/Project Logos/Digital Literacy.png",
       beneficiaries: "230 Learners",
       status: "Active",
       category: "Digital Education"
@@ -36,18 +49,10 @@ const ProjectsSection = () => {
       description: "Education initiative serving 450 students from grades 1-5 across 16 villages with trained local women educators.",
       detailedDescription: "This education-focused program provides daily learning sessions conducted by trained local women educators. It strengthens early childhood education, empowers women educators in rural areas, enhances academic performance, and integrates extracurricular activities and life skills.",
       image: "/Pankh Replace.jpg",
+      logo: "/Project Logos/PANKH.png",
       beneficiaries: "450 Students",
       status: "Active",
       category: "Education"
-    },
-    {
-      title: "Nisarg Mitra Manch",
-      description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
-      detailedDescription: "Nisarg Mitra Manch encourages environmental conservation through afforestation drives, clean-up campaigns, biodiversity awareness sessions, and sustainable livelihood education. The platform promotes community participation in preserving natural resources around the Tipeshwar Wildlife Sanctuary.",
-      image: "/Nisarg Mitr manch.jpg",
-      beneficiaries: "16 Villages",
-      status: "Active",
-      category: "Environment"
     }
   ];
 
@@ -77,7 +82,7 @@ const ProjectsSection = () => {
                     className="relative rounded-3xl shadow-2xl w-full h-96 object-cover transform -rotate-1 hover:rotate-0 transition-transform duration-500"
                   />
                   <div className="absolute top-4 right-4">
-                    <span className="bg-white/90 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-white/90 text-orange-600 px-4 py-1 rounded-full text-sm font-medium">
                       {project.category}
                     </span>
                   </div>
@@ -86,7 +91,14 @@ const ProjectsSection = () => {
               
               <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                 <div>
-                  <h3 className="text-4xl font-bold text-gray-900 mb-4">{project.title}</h3>
+                  <div className="flex items-center mb-4">
+                    <img 
+                      src={project.logo} 
+                      alt={`${project.title} logo`}
+                      className="w-24 h-24 mr-4 object-contain"
+                    />
+                    <h3 className="text-4xl font-bold text-gray-900">{project.title}</h3>
+                  </div>
                   <p className="text-xl text-gray-600 leading-relaxed mb-4">
                     {project.description}
                   </p>
