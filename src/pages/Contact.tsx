@@ -185,7 +185,7 @@ const Contact = () => {
           <p className="text-xl text-orange-100 mb-8">
             Don't wait - start making a difference in rural Maharashtra today!
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <button 
               onClick={() => setIsVolunteerFormOpen(true)}
               className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg"
@@ -194,9 +194,6 @@ const Contact = () => {
             </button>
             <button className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg">
               Make a Donation
-            </button>
-            <button className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-50 transition-all duration-300 shadow-lg">
-              Partner With Us
             </button>
           </div>
         </div>
