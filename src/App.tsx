@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { TranslationProvider } from './contexts/TranslationContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -20,29 +21,31 @@ import AnnualReports from './pages/AnnualReports';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen">
-        <ScrollToTop />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/sdg-goals" element={<SDGGoals />} />
-          <Route path="/sitemap" element={<Sitemap />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/donate" element={<Donate />} />
-          <Route path="/media" element={<Media />} />
-          <Route path="/covid-pandemic" element={<CovidPandemic />} />
-          <Route path="/trusty" element={<Trusty />} />
-          <Route path="/awards" element={<Awards />} />
-          <Route path="/annual-reports" element={<AnnualReports />} />
-          <Route path="/projects/:projectId" element={<ProjectDetail />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <TranslationProvider>
+      <Router>
+        <div className="min-h-screen">
+          <ScrollToTop />
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/sdg-goals" element={<SDGGoals />} />
+            <Route path="/sitemap" element={<Sitemap />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/donate" element={<Donate />} />
+            <Route path="/media" element={<Media />} />
+            <Route path="/covid-pandemic" element={<CovidPandemic />} />
+            <Route path="/trusty" element={<Trusty />} />
+            <Route path="/awards" element={<Awards />} />
+            <Route path="/annual-reports" element={<AnnualReports />} />
+            <Route path="/projects/:projectId" element={<ProjectDetail />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </TranslationProvider>
   );
 }
 
