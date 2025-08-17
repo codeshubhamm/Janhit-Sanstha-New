@@ -10,7 +10,7 @@ const Projects = () => {
     {
       id: "nisarg-mitra-manch",
       title: "Nisarg Mitra Manch",
-      description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
+      description: "Environmental conservators platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
       detailedDescription: "This initiative focuses on environmental awareness through tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, environmental protection activities, and has over 40 active youth members.",
       image: "/Nisarg Mitr manch.jpg",
       logo: "/Logos Before Name/Nisarg_mitr_manch-removebg-preview.png",
@@ -122,7 +122,7 @@ const Projects = () => {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our comprehensive projects address key areas of development in tribal communities, 
-            from education and digital literacy to women empowerment and environmental conservation.
+            from education and digital literacy to women empowerment and environmental conservators.
           </p>
         </div>
       </section>

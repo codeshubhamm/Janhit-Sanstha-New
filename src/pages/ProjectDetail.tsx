@@ -155,8 +155,8 @@ const ProjectDetail = () => {
     },
     "nisarg-mitra-manch": {
       title: "Nisarg Mitra Manch",
-      subtitle: "Environmental Conservation Platform",
-      description: "A platform for environmental conservation activities, including afforestation drives, biodiversity awareness, and sustainable livelihood practices.",
+      subtitle: "Environmental Conservators Platform",
+      description: "A platform for environmental conservators activities, including afforestation drives, biodiversity awareness, and sustainable livelihood practices.",
       fullDescription: "This initiative focuses on environmental awareness through comprehensive programs including tree plantation, forest conservation, waste management, and environmental education campaigns. The forum conducts eco-friendly campaigns like single-use plastic ban, alternatives to plastic, environmental protection slogans, drawing competitions, street plays, and rallies. Currently, the forum has over 40 active youth members committed to environmental protection.",
       image: "/Nisarg Mitr manch.jpg",
       additionalImages: [
@@ -168,7 +168,7 @@ const ProjectDetail = () => {
       status: "Active",
       category: "Environment",
       objectives: [
-        "Promote environmental conservation awareness",
+        "Promote environmental conservators awareness",
         "Conduct afforestation and reforestation drives",
         "Implement waste management programs",
         "Create biodiversity awareness",

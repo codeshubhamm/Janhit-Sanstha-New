@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "Nisarg Mitra Manch",
-      description: "Environmental conservation platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
+      description: "Environmental conservators platform promoting afforestation, clean-up campaigns, and biodiversity awareness.",
       detailedDescription: "Nisarg Mitra Manch encourages environmental conservation through afforestation drives, clean-up campaigns, biodiversity awareness sessions, and sustainable livelihood education. The platform promotes community participation in preserving natural resources around the Tipeshwar Wildlife Sanctuary.",
       image: "/Nisarg Mitr manch.jpg",
       logo: "/Logos Before Name/Nisarg_mitr_manch-removebg-preview.png",
@@ -66,7 +66,7 @@ const ProjectsSection = () => {
           <h2 className="text-5xl font-bold text-gray-900 mb-6">Transforming Lives Through Action</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our comprehensive projects address key areas of development in tribal communities, 
-            from education and digital literacy to women empowerment and environmental conservation.
+            from education and digital literacy to women empowerment and environmental conservators.
           </p>
         </div>
         

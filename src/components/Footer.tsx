@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <p className="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed">
               Established in 1998, empowering rural and tribal communities in Maharashtra through education, 
-              digital literacy, women empowerment, and environmental conservation initiatives.
+              digital literacy, women empowerment, and environmental conservators initiatives.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -145,7 +145,14 @@ const Footer = () => {
           </div>
           <div className="mt-4 text-center text-xs sm:text-sm">
             <span className="text-gray-500">Designed & Developed by </span>
-            <span className="font-semibold bg-gradient-to-r from-orange-500 via-green-600 to-orange-500 bg-clip-text text-transparent">Shubham Gungunwar</span>
+            <a 
+              href="https://www.linkedin.com/in/shubham-gungunwar-010536325" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-semibold text-orange-600 hover:text-orange-700 transition-colors cursor-pointer"
+            >
+              Shubham Gungunwar
+            </a>
           </div>
         </div>
       </div>

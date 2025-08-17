@@ -4,6 +4,10 @@ const Media = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isFlipping, setIsFlipping] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [expandedFolders, setExpandedFolders] = useState<{ [key: string]: boolean }>({
+    nisargMitraManch: false,
+    covidPandemic: false
+  });
 
   const brochurePages = [
     "/brocher page 1.jpg",
@@ -17,6 +21,65 @@ const Media = () => {
     "/News Cuttings/IMG-20250816-WA0010.jpg",
     "/News Cuttings/IMG-20250816-WA0009.jpg",
     "/News Cuttings/IMG-20250816-WA0008.jpg"
+  ];
+
+  const nisargMitraManchCuttings = [
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0068.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0069.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0066.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0067.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0065.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0064.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0063.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0062.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0061.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0060.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0059.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0058.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0057.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0056.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0055.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0054.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0052.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0053.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0051.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0050.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0049.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0047.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0046.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0045.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0044.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0043.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0042.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0040.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0041.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0039.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0038.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0037.jpg",
+    "/NISARG MITRA MANCH News Cutouts/IMG-20250816-WA0036.jpg"
+  ];
+
+  const covidPandemicCuttings = [
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0098.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0097.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0096.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0095.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0094.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0093.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0092.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0091.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0090.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0089.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0088.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0087.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0085.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0086.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0084.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0082.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0083.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0081.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0071.jpg",
+    "/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0070.jpg"
   ];
 
   const nextPage = () => {
@@ -47,6 +110,13 @@ const Media = () => {
     setSelectedImage(null);
   };
 
+  const toggleFolder = (folderKey: string) => {
+    setExpandedFolders(prev => ({
+      ...prev,
+      [folderKey]: !prev[folderKey]
+    }));
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -65,13 +135,13 @@ const Media = () => {
         </div>
       </section>
 
-      {/* Nisarg Mitr Manch Section */}
+      {/* Nisarg Mitra Manch Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nisarg Mitr Manch</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nisarg Mitra Manch</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our dedicated wing leading environmental conservation, community development, and pandemic response initiatives.
+              Our dedicated wing leading environmental conservators, community development, and pandemic response initiatives.
             </p>
           </div>
           
@@ -82,7 +152,7 @@ const Media = () => {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4 mx-auto">
                   🌱
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Environmental Conservation</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">Environmental Conservators</h3>
                 <p className="text-gray-600 mb-4 text-center">Leading tree plantation drives, water conservation projects, and sustainable farming initiatives across rural Maharashtra.</p>
                 <div className="text-center">
                   <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -99,7 +169,7 @@ const Media = () => {
                   🏥
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">COVID-19 Response</h3>
-                <p className="text-gray-600 mb-4 text-center">Every pandemic initiative was led by Nisarg Mitr Manch, providing essential support, awareness campaigns, and community assistance.</p>
+                <p className="text-gray-600 mb-4 text-center">Every pandemic initiative was led by Nisarg Mitra Manch, providing essential support, awareness campaigns, and community assistance.</p>
                 <div className="text-center">
                   <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
                     Communities Served: 50+
@@ -125,17 +195,17 @@ const Media = () => {
             </div>
           </div>
           
-          {/* Additional Nisarg Mitr Manch Info */}
+          {/* Additional Nisarg Mitra Manch Info */}
           <div className="mt-16 bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
                 <p className="text-gray-700 mb-4">
-                  Nisarg Mitr Manch serves as the dedicated environmental and community development wing of Janhit Sanstha, 
+                  Nisarg Mitra Manch serves as the dedicated environmental and community development wing of Janhit Sanstha, 
                   working tirelessly to create sustainable change in rural Maharashtra.
                 </p>
                 <p className="text-gray-700">
-                  From environmental conservation to pandemic response, we ensure that every initiative aligns with our 
+                  From environmental conservators to pandemic response, we ensure that every initiative aligns with our 
                   commitment to community welfare and sustainable development.
                 </p>
               </div>
@@ -253,8 +323,142 @@ const Media = () => {
         </div>
       </section>
 
-      {/* News Papers Section */}
+      {/* Nisarg Mitra Manch News Paper Cutouts Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nisarg Mitra Manch News Paper Cutouts</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Media coverage highlighting our environmental conservation, community development, and sustainable initiatives across Maharashtra.
+            </p>
+          </div>
+          
+                     {/* Folder Header with Thumbnail - Clickable */}
+           <div 
+             className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 mb-8 cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+             onClick={() => toggleFolder('nisargMitraManch')}
+           >
+             <div className="text-center mb-4">
+               <p className="text-sm text-gray-500 italic">💡 Click on the folder to view all articles</p>
+             </div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-6">
+                <div className="w-24 h-24 bg-green-100 rounded-2xl flex items-center justify-center">
+                  <img 
+                    src="/Nisarg Mitr manch.jpg" 
+                    alt="Nisarg Mitra Manch"
+                    className="w-20 h-20 object-cover rounded-xl"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">🌿 Nisarg Mitra Manch</h3>
+                  <p className="text-gray-600 mb-3">Environmental Conservation & Community Development</p>
+                  <div className="flex items-center space-x-4 text-sm text-gray-500">
+                    <span>📰 {nisargMitraManchCuttings.length} News Articles</span>
+                    <span>🌱 Environmental Focus</span>
+                    <span>🏘️ Community Projects</span>
+                  </div>
+                </div>
+              </div>
+              <div className="text-4xl text-gray-400 transition-transform duration-300">
+                {expandedFolders.nisargMitraManch ? '📂' : '📁'}
+              </div>
+            </div>
+          </div>
+          
+          {/* News Cuttings Grid - Expandable */}
+          {expandedFolders.nisargMitraManch && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
+              {nisargMitraManchCuttings.map((cutting, index) => (
+                <div key={index} className="group">
+                  <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <img 
+                      src={cutting} 
+                      alt={`Nisarg Mitra Manch News Cutting ${index + 1}`}
+                      className="w-full h-48 object-cover cursor-pointer group-hover:scale-105 transition-transform duration-300"
+                      onClick={() => openImagePreview(cutting)}
+                    />
+                    <div className="p-4">
+                      <div className="text-sm text-gray-500 mb-2">Article #{index + 1}</div>
+                      <div className="text-xs text-gray-400">Click to view full size</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Covid Pandemic News Paper Cutouts Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Covid Pandemic News Paper Cutouts</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Media coverage documenting our comprehensive response and support during the COVID-19 pandemic crisis.
+            </p>
+          </div>
+          
+                     {/* Folder Header with Thumbnail - Clickable */}
+           <div 
+             className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 mb-8 cursor-pointer hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+             onClick={() => toggleFolder('covidPandemic')}
+           >
+             <div className="text-center mb-4">
+               <p className="text-sm text-gray-500 italic">💡 Click on the folder to view all articles</p>
+             </div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-6">
+                <div className="w-24 h-24 bg-blue-100 rounded-2xl flex items-center justify-center">
+                  <img 
+                    src="/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0070.jpg" 
+                    alt="Covid Pandemic Response"
+                    className="w-20 h-20 object-cover rounded-xl"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">🏥 Covid Pandemic Response</h3>
+                  <p className="text-gray-600 mb-3">Emergency Support & Community Assistance</p>
+                  <div className="flex items-center space-x-4 text-sm text-gray-500">
+                    <span>📰 {covidPandemicCuttings.length} News Articles</span>
+                    <span>🏥 Healthcare Support</span>
+                    <span>🤝 Community Aid</span>
+                  </div>
+                </div>
+              </div>
+              <div className="text-4xl text-gray-400 transition-transform duration-300">
+                {expandedFolders.covidPandemic ? '📂' : '📁'}
+              </div>
+            </div>
+          </div>
+          
+          {/* News Cuttings Grid - Expandable */}
+          {expandedFolders.covidPandemic && (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
+              {covidPandemicCuttings.map((cutting, index) => (
+                <div key={index} className="group">
+                  <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <img 
+                      src={cutting} 
+                      alt={`Covid Pandemic News Cutting ${index + 1}`}
+                      className="w-full h-48 object-cover cursor-pointer group-hover:scale-105 transition-transform duration-300"
+                      onClick={() => openImagePreview(cutting)}
+                    />
+                    <div className="p-4">
+                      <div className="text-sm text-gray-500 mb-2">Article #{index + 1}</div>
+                      <div className="text-xs text-gray-400">Click to view full size</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* News Papers Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">News Papers</h2>

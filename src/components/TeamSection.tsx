@@ -43,7 +43,7 @@ const TeamSection = () => {
       position: "Environmental Coordinator",
       image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=300",
       bio: "Environmental scientist working on conservation projects around Tipeshwar Wildlife Sanctuary.",
-      specialization: "Environmental Conservation"
+      specialization: "Environmental Conservators"
     }
   ];
 

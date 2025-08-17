@@ -6,7 +6,7 @@ const About = () => {
     { icon: Users, title: "Adolescent Development", color: "from-orange-400 to-red-500", description: "Empowering young minds through structured programs" },
     { icon: GraduationCap, title: "Education and Skill Development", color: "from-blue-400 to-blue-600", description: "Providing quality education and skill training" },
     { icon: Heart, title: "Women and Adolescent Empowerment", color: "from-pink-400 to-pink-600", description: "Building stronger, more inclusive communities" },
-    { icon: Leaf, title: "Environmental Conservation", color: "from-green-400 to-green-600", description: "Protecting our natural resources for future generations" },
+    { icon: Leaf, title: "Environmental Conservators", color: "from-green-400 to-green-600", description: "Youth leading environmental protection and conservation efforts" },
     { icon: Award, title: "Digital and Financial Literacy", color: "from-purple-400 to-purple-600", description: "Teaching digital skills and financial management" },
     { icon: Globe, title: "Rural Governance Awareness", color: "from-yellow-400 to-yellow-600", description: "Promoting awareness about government schemes and services" }
   ];

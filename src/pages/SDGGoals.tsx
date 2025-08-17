@@ -49,7 +49,7 @@ const SDGGoals = () => {
       description: "Ensure availability and sustainable management of water",
       image: "/SDG GOALS IMAGES/SDG GOAL 6.png",
       color: "from-cyan-500 to-cyan-600",
-      janhitContribution: "Environmental conservation and water management awareness"
+      janhitContribution: "Environmental conservators and water management awareness"
     },
     {
       number: 13,
@@ -57,7 +57,7 @@ const SDGGoals = () => {
       description: "Take urgent action to combat climate change",
       image: "/SDG GOALS IMAGES/SDG GOAL 13.png",
       color: "from-emerald-500 to-emerald-600",
-      janhitContribution: "Nisarg Mitra Manch environmental conservation programs"
+      janhitContribution: "Nisarg Mitra Manch environmental conservators programs"
     },
     {
       number: 15,
@@ -145,7 +145,7 @@ const SDGGoals = () => {
               <div className="bg-white p-8 rounded-3xl shadow-xl border border-green-100">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">🌱 Environmental Impact</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Through Nisarg Mitra Manch, we address SDGs 13, 14, and 15 by promoting environmental conservation, 
+                  Through Nisarg Mitra Manch, we address SDGs 13, 14, and 15 by promoting environmental conservators, 
                   tree plantation, and biodiversity awareness in rural communities.
                 </p>
               </div>

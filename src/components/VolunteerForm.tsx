@@ -32,7 +32,7 @@ const VolunteerForm = ({ isOpen, onClose }: VolunteerFormProps) => {
     'Education & Teaching',
     'Digital Literacy',
     'Women Empowerment',
-    'Environmental Conservation',
+    'Environmental Conservators',
     'Health & Hygiene',
     'Financial Literacy',
     'Community Outreach',

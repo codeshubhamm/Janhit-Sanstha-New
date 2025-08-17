@@ -5,7 +5,7 @@ const StatsSection = () => {
   const stats = [
     {
       number: "40+",
-      label: "Environmental Conservation",
+      label: "Environmental Conservators",
       projectName: "Nisarg Mitra Manch",
       description: "Youth Members",
       logo: "/Logos Before Name/Nisarg_mitr_manch-removebg-preview.png",

@@ -22,7 +22,7 @@ const AnnualReports = () => {
     {
       year: "2023-24",
       title: "Janhit Sanstha Annual Report 2023-24",
-      description: "Detailed analysis of our programs, community impact, and strategic initiatives from the previous year. This report showcases our educational programs, healthcare initiatives, and environmental conservation efforts.",
+      description: "Detailed analysis of our programs, community impact, and strategic initiatives from the previous year. This report showcases our educational programs, healthcare initiatives, and environmental conservators efforts.",
       file: "/Annul Reports/Janhit Sanstha Annual Report 2023-24.pdf",
       color: "from-blue-500 to-blue-600",
       bgColor: "from-blue-100 to-blue-200",
@@ -30,7 +30,7 @@ const AnnualReports = () => {
       highlights: [
         "Educational Programs Success",
         "Healthcare Initiatives",
-        "Environmental Conservation",
+        "Environmental Conservators",
         "Strategic Partnerships"
       ]
     },

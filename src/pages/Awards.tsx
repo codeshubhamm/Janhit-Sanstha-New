@@ -16,16 +16,15 @@ const Awards = () => {
   const awardImages = [
     "/Awards Janhit/1000003310.jpg",
     "/Awards Janhit/1000003311.jpg",
+    "/Awards Janhit/1000003312.jpg",
     "/Awards Janhit/1000003317.jpg",
+    "/Awards Janhit/1000003318.jpg",
     "/Awards Janhit/1000003319.jpg",
     "/Awards Janhit/1000003322.jpg",
     "/Awards Janhit/1000003325.jpg",
-    "/Awards Janhit/1000005904.jpg",
     "/Awards Janhit/1000009621.jpg",
     "/Awards Janhit/1000009622.jpg",
-    "/Awards Janhit/1000009624.jpg",
-    "/Awards Janhit/1000009625.jpg",
-    "/Awards Janhit/1000009626.jpg"
+    "/Awards Janhit/1000009623.jpg"
   ];
 
   const openModal = (image: string) => {

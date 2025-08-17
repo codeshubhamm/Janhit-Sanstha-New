@@ -63,7 +63,7 @@ const Sitemap = () => {
     {
       title: "Nisarg Mitra Manch",
       path: "/projects/nisarg-mitra-manch",
-      description: "Environmental conservation program",
+      description: "Environmental conservators program",
       icon: Leaf,
       category: "Projects"
     },
