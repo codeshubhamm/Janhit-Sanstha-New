@@ -341,29 +341,29 @@ const Media = () => {
              <div className="text-center mb-4">
                <p className="text-sm text-gray-500 italic">💡 Click on the folder to view all articles</p>
              </div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-6">
-                <div className="w-24 h-24 bg-green-100 rounded-2xl flex items-center justify-center">
-                  <img 
-                    src="/Nisarg Mitr manch.jpg" 
-                    alt="Nisarg Mitra Manch"
-                    className="w-20 h-20 object-cover rounded-xl"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">🌿 Nisarg Mitra Manch</h3>
-                  <p className="text-gray-600 mb-3">Environmental Conservation & Community Development</p>
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
-                    <span>📰 {nisargMitraManchCuttings.length} News Articles</span>
-                    <span>🌱 Environmental Focus</span>
-                    <span>🏘️ Community Projects</span>
-                  </div>
-                </div>
-              </div>
-              <div className="text-4xl text-gray-400 transition-transform duration-300">
-                {expandedFolders.nisargMitraManch ? '📂' : '📁'}
-              </div>
-            </div>
+                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:space-x-6">
+                 <div className="w-20 h-20 sm:w-24 sm:h-24 bg-green-100 rounded-2xl flex items-center justify-center mx-auto sm:mx-0">
+                   <img 
+                     src="/Nisarg Mitr manch.jpg" 
+                     alt="Nisarg Mitra Manch"
+                     className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-xl"
+                   />
+                 </div>
+                 <div className="text-center sm:text-left">
+                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">🌿 Nisarg Mitra Manch</h3>
+                   <p className="text-gray-600 mb-3">Environmental Conservation & Community Development</p>
+                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:space-x-4 text-sm text-gray-500">
+                     <span>📰 {nisargMitraManchCuttings.length} News Articles</span>
+                     <span>🌱 Environmental Focus</span>
+                     <span>🏘️ Community Projects</span>
+                   </div>
+                 </div>
+               </div>
+               <div className="text-3xl sm:text-4xl text-gray-400 transition-transform duration-300 text-center sm:text-right">
+                 {expandedFolders.nisargMitraManch ? '📂' : '📁'}
+               </div>
+             </div>
           </div>
           
           {/* News Cuttings Grid - Expandable */}
@@ -408,29 +408,29 @@ const Media = () => {
              <div className="text-center mb-4">
                <p className="text-sm text-gray-500 italic">💡 Click on the folder to view all articles</p>
              </div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-6">
-                <div className="w-24 h-24 bg-blue-100 rounded-2xl flex items-center justify-center">
-                  <img 
-                    src="/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0070.jpg" 
-                    alt="Covid Pandemic Response"
-                    className="w-20 h-20 object-cover rounded-xl"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">🏥 Covid Pandemic Response</h3>
-                  <p className="text-gray-600 mb-3">Emergency Support & Community Assistance</p>
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
-                    <span>📰 {covidPandemicCuttings.length} News Articles</span>
-                    <span>🏥 Healthcare Support</span>
-                    <span>🤝 Community Aid</span>
-                  </div>
-                </div>
-              </div>
-              <div className="text-4xl text-gray-400 transition-transform duration-300">
-                {expandedFolders.covidPandemic ? '📂' : '📁'}
-              </div>
-            </div>
+                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:space-x-6">
+                 <div className="w-20 h-20 sm:w-24 sm:h-24 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto sm:mx-0">
+                   <img 
+                     src="/CORONA PANDAMIC News Cutouts/IMG-20250816-WA0070.jpg" 
+                     alt="Covid Pandemic Response"
+                     className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-xl"
+                   />
+                 </div>
+                 <div className="text-center sm:text-left">
+                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">🏥 Covid Pandemic Response</h3>
+                   <p className="text-gray-600 mb-3">Emergency Support & Community Assistance</p>
+                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:space-x-4 text-sm text-gray-500">
+                     <span>📰 {covidPandemicCuttings.length} News Articles</span>
+                     <span>🏥 Healthcare Support</span>
+                     <span>🤝 Community Aid</span>
+                   </div>
+                 </div>
+               </div>
+               <div className="text-3xl sm:text-4xl text-gray-400 transition-transform duration-300 text-center sm:text-right">
+                 {expandedFolders.covidPandemic ? '📂' : '📁'}
+               </div>
+             </div>
           </div>
           
           {/* News Cuttings Grid - Expandable */}
