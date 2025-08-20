@@ -13,10 +13,10 @@ const StatsSection = () => {
     },
     {
       number: "250+",
-      label: "Students Education",
+      label: "Adolescent Girls",
       projectName: "Nirmiti",
       highlightedText: "The Gang of Girls",
-      description: "(Adolescent Girls Holistic Development)",
+      description: "(Holistic Development)",
       logo: "/Logos Before Name/Nirmiti_The_Gang_Of_Girls_Logo-removebg-preview.png",
       color: "text-blue-600"
     },

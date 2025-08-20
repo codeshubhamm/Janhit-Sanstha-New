@@ -6,7 +6,7 @@ const Contact = () => {
   const [isVolunteerFormOpen, setIsVolunteerFormOpen] = useState(false);
   
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white">         k             
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-orange-50 via-white to-orange-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

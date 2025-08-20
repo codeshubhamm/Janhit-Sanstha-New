@@ -266,7 +266,7 @@ const ProjectDetail = () => {
       title: "Be the Change",
       subtitle: "Free Library Initiative",
       description: "In many rural communities, a lack of resources and high costs can make it difficult for students to achieve their academic dreams. At Be the Change, we are dedicated to bridging this educational gap. Our free library provides a welcoming space where rural students can access essential resources, receive personalized guidance, and build a foundation for a successful future. We are committed to removing financial barriers and empowering you to reach your full potential.",
-      fullDescription: "Be the Change is a collaborative project with Need Sanstha to create a free library in Pandharkawda for students. The library offers a quiet study space, access to books, reference materials, and digital resources. It is designed to help rural students overcome financial and resource barriers, receive personalized guidance, and build a strong foundation for their academic and personal growth. By fostering a culture of reading and learning, the project empowers students to pursue their dreams and achieve success.",
+      fullDescription: "Be the Change is a collaborative project with NEED Sanstha to create a free library in Pandharkawda for students. The library offers a quiet study space, access to books, reference materials, and digital resources. It is designed to help rural students overcome financial and resource barriers, receive personalized guidance, and build a strong foundation for their academic and personal growth. By fostering a culture of reading and learning, the project empowers students to pursue their dreams and achieve success.",
       image: "/Be the change image .jpg",
       beneficiaries: "",
       startDate: "January 2025",
@@ -293,7 +293,7 @@ const ProjectDetail = () => {
         "Increased access to educational materials",
         "Improved study environment for students",
         "Enhanced community learning opportunities",
-        "Strengthened partnership with Need Sanstha",
+        "Strengthened partnership with NEED Sanstha",
         "Promoted literacy and education in Pandharkawda"
       ]
     }
@@ -339,9 +339,9 @@ const ProjectDetail = () => {
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900">
                   {project.title}
                 </h1>
-                {project.subtitle && (
+                {'subtitle' in project && (project as any).subtitle && (
                   <h2 className="text-xl sm:text-2xl text-orange-600 font-semibold">
-                    {project.subtitle}
+                    {(project as any).subtitle}
                   </h2>
                 )}
                 <p className="text-lg text-gray-600 leading-relaxed">

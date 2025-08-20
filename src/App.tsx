@@ -18,6 +18,7 @@ import CovidPandemic from './pages/CovidPandemic';
 import Trusty from './pages/Trusty';
 import Awards from './pages/Awards';
 import AnnualReports from './pages/AnnualReports';
+import Partners from './pages/Partners';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/awards" element={<Awards />} />
             <Route path="/annual-reports" element={<AnnualReports />} />
             <Route path="/projects/:projectId" element={<ProjectDetail />} />
+            <Route path="/partners" element={<Partners />} />
           </Routes>
           <Footer />
         </div>

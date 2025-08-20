@@ -189,6 +189,15 @@ const Header = () => {
                 >
                   Trustee
                 </Link>
+                <Link 
+                  to="/partners" 
+                  onClick={closeTeamDropdown}
+                  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                    isActive('/partners') ? 'text-orange-500 bg-orange-50' : 'text-gray-700 hover:text-orange-500 hover:bg-orange-50'
+                  }`}
+                >
+                  Partners
+                </Link>
               </div>
             </div>
             <Link 

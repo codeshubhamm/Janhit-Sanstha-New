@@ -167,36 +167,7 @@ const Team = () => {
         </div>
       </section>
 
-      {/* Join Our Team */}
-      <section className="py-16 bg-gradient-to-r from-gray-50 to-orange-50 relative overflow-hidden">
-        {/* Background decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-orange-100/20 to-transparent"></div>
-        
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Join Our Team</h2>
-          <p className="text-gray-600 mb-8 text-lg">
-            We're always looking for dedicated individuals to join our mission.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-xl font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              <span className="flex items-center justify-center">
-                View Open Positions
-                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </span>
-            </button>
-            <button className="group border-2 border-orange-600 text-orange-600 px-10 py-4 rounded-xl font-semibold hover:bg-orange-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
-              <span className="flex items-center justify-center">
-                Send Your Resume
-                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Team Values */}
       <section className="py-16 bg-white">
